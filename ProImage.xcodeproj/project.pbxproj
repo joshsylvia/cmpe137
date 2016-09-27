@@ -56,15 +56,23 @@
 		A51265ED1D9A3EEE00DCABA3 /* ProImage */ = {
 			isa = PBXGroup;
 			children = (
-				A51265EE1D9A3EEE00DCABA3 /* AppDelegate.swift */,
-				A51265F01D9A3EEE00DCABA3 /* ViewController.swift */,
+				A51266031D9A3F1200DCABA3 /* src */,
 				A51265F21D9A3EEE00DCABA3 /* Main.storyboard */,
+				A51265F01D9A3EEE00DCABA3 /* ViewController.swift */,
+			);
+			path = ProImage;
+			sourceTree = "<group>";
+		};
+		A51266031D9A3F1200DCABA3 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A51265EE1D9A3EEE00DCABA3 /* AppDelegate.swift */,
 				A51265F81D9A3EEE00DCABA3 /* Assets.xcassets */,
 				A51265FA1D9A3EEE00DCABA3 /* LaunchScreen.storyboard */,
 				A51265FD1D9A3EEE00DCABA3 /* Info.plist */,
 				A51265F51D9A3EEE00DCABA3 /* ProImage.xcdatamodeld */,
 			);
-			path = ProImage;
+			name = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
