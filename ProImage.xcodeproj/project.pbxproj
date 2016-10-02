@@ -8,26 +8,73 @@
 
 /* Begin PBXBuildFile section */
 		A51265EF1D9A3EEE00DCABA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51265EE1D9A3EEE00DCABA3 /* AppDelegate.swift */; };
-		A51265F11D9A3EEE00DCABA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51265F01D9A3EEE00DCABA3 /* ViewController.swift */; };
 		A51265F41D9A3EEE00DCABA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A51265F21D9A3EEE00DCABA3 /* Main.storyboard */; };
 		A51265F71D9A3EEE00DCABA3 /* ProImage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A51265F51D9A3EEE00DCABA3 /* ProImage.xcdatamodeld */; };
 		A51265F91D9A3EEE00DCABA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A51265F81D9A3EEE00DCABA3 /* Assets.xcassets */; };
 		A51265FC1D9A3EEE00DCABA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A51265FA1D9A3EEE00DCABA3 /* LaunchScreen.storyboard */; };
+		A513FD0F1D9CD22100BAA9BF /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = A513FD0E1D9CD22100BAA9BF /* Image.swift */; };
+		A57A60421DA090B600CB27B8 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A60411DA090B600CB27B8 /* ImageViewController.swift */; };
+		A57A60451DA0946300CB27B8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A60441DA0946300CB27B8 /* MainViewController.swift */; };
+		A57A60471DA0A76700CB27B8 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A60461DA0A76700CB27B8 /* CameraViewController.swift */; };
+		A57A60491DA0A7B900CB27B8 /* PhtotoLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A60481DA0A7B900CB27B8 /* PhtotoLibraryViewController.swift */; };
+		A5EFBF3E1D9BA53C00EFE894 /* ProImageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EFBF3D1D9BA53C00EFE894 /* ProImageUITests.swift */; };
+		A5EFBF4C1D9BA54700EFE894 /* ProImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EFBF4B1D9BA54700EFE894 /* ProImageTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5EFBF401D9BA53C00EFE894 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A51265E31D9A3EED00DCABA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A51265EA1D9A3EED00DCABA3;
+			remoteInfo = ProImage;
+		};
+		A5EFBF4E1D9BA54700EFE894 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A51265E31D9A3EED00DCABA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A51265EA1D9A3EED00DCABA3;
+			remoteInfo = ProImage;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A51265EB1D9A3EEE00DCABA3 /* ProImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A51265EE1D9A3EEE00DCABA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A51265F01D9A3EEE00DCABA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A51265F31D9A3EEE00DCABA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A51265F61D9A3EEE00DCABA3 /* ProImage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProImage.xcdatamodel; sourceTree = "<group>"; };
 		A51265F81D9A3EEE00DCABA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A51265FB1D9A3EEE00DCABA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A51265FD1D9A3EEE00DCABA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A513FD0E1D9CD22100BAA9BF /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		A57A60411DA090B600CB27B8 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		A57A60441DA0946300CB27B8 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A57A60461DA0A76700CB27B8 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		A57A60481DA0A7B900CB27B8 /* PhtotoLibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhtotoLibraryViewController.swift; sourceTree = "<group>"; };
+		A5EFBF3B1D9BA53B00EFE894 /* ProImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5EFBF3D1D9BA53C00EFE894 /* ProImageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProImageUITests.swift; sourceTree = "<group>"; };
+		A5EFBF3F1D9BA53C00EFE894 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5EFBF491D9BA54700EFE894 /* ProImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5EFBF4B1D9BA54700EFE894 /* ProImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProImageTests.swift; sourceTree = "<group>"; };
+		A5EFBF4D1D9BA54700EFE894 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A51265E81D9A3EED00DCABA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5EFBF381D9BA53B00EFE894 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5EFBF461D9BA54700EFE894 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				A51265ED1D9A3EEE00DCABA3 /* ProImage */,
+				A5EFBF3C1D9BA53B00EFE894 /* ProImageUITests */,
+				A5EFBF4A1D9BA54700EFE894 /* ProImageTests */,
 				A51265EC1D9A3EEE00DCABA3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				A51265EB1D9A3EEE00DCABA3 /* ProImage.app */,
+				A5EFBF3B1D9BA53B00EFE894 /* ProImageUITests.xctest */,
+				A5EFBF491D9BA54700EFE894 /* ProImageTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,23 +107,45 @@
 		A51265ED1D9A3EEE00DCABA3 /* ProImage */ = {
 			isa = PBXGroup;
 			children = (
-				A51266031D9A3F1200DCABA3 /* src */,
 				A51265F21D9A3EEE00DCABA3 /* Main.storyboard */,
-				A51265F01D9A3EEE00DCABA3 /* ViewController.swift */,
+				A57A60461DA0A76700CB27B8 /* CameraViewController.swift */,
+				A57A60411DA090B600CB27B8 /* ImageViewController.swift */,
+				A513FD0E1D9CD22100BAA9BF /* Image.swift */,
+				A57A60441DA0946300CB27B8 /* MainViewController.swift */,
+				A57A60481DA0A7B900CB27B8 /* PhtotoLibraryViewController.swift */,
+				A57427F51D9F38BE0087DA35 /* SupportedFiles */,
 			);
 			path = ProImage;
 			sourceTree = "<group>";
 		};
-		A51266031D9A3F1200DCABA3 /* src */ = {
+		A57427F51D9F38BE0087DA35 /* SupportedFiles */ = {
 			isa = PBXGroup;
 			children = (
-				A51265EE1D9A3EEE00DCABA3 /* AppDelegate.swift */,
-				A51265F81D9A3EEE00DCABA3 /* Assets.xcassets */,
 				A51265FA1D9A3EEE00DCABA3 /* LaunchScreen.storyboard */,
 				A51265FD1D9A3EEE00DCABA3 /* Info.plist */,
+				A51265EE1D9A3EEE00DCABA3 /* AppDelegate.swift */,
+				A51265F81D9A3EEE00DCABA3 /* Assets.xcassets */,
 				A51265F51D9A3EEE00DCABA3 /* ProImage.xcdatamodeld */,
 			);
-			name = src;
+			name = SupportedFiles;
+			sourceTree = "<group>";
+		};
+		A5EFBF3C1D9BA53B00EFE894 /* ProImageUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A5EFBF3D1D9BA53C00EFE894 /* ProImageUITests.swift */,
+				A5EFBF3F1D9BA53C00EFE894 /* Info.plist */,
+			);
+			path = ProImageUITests;
+			sourceTree = "<group>";
+		};
+		A5EFBF4A1D9BA54700EFE894 /* ProImageTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5EFBF4B1D9BA54700EFE894 /* ProImageTests.swift */,
+				A5EFBF4D1D9BA54700EFE894 /* Info.plist */,
+			);
+			path = ProImageTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +168,42 @@
 			productReference = A51265EB1D9A3EEE00DCABA3 /* ProImage.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A5EFBF3A1D9BA53B00EFE894 /* ProImageUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5EFBF441D9BA53C00EFE894 /* Build configuration list for PBXNativeTarget "ProImageUITests" */;
+			buildPhases = (
+				A5EFBF371D9BA53B00EFE894 /* Sources */,
+				A5EFBF381D9BA53B00EFE894 /* Frameworks */,
+				A5EFBF391D9BA53B00EFE894 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5EFBF411D9BA53C00EFE894 /* PBXTargetDependency */,
+			);
+			name = ProImageUITests;
+			productName = ProImageUITests;
+			productReference = A5EFBF3B1D9BA53B00EFE894 /* ProImageUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A5EFBF481D9BA54700EFE894 /* ProImageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5EFBF501D9BA54700EFE894 /* Build configuration list for PBXNativeTarget "ProImageTests" */;
+			buildPhases = (
+				A5EFBF451D9BA54700EFE894 /* Sources */,
+				A5EFBF461D9BA54700EFE894 /* Frameworks */,
+				A5EFBF471D9BA54700EFE894 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5EFBF4F1D9BA54700EFE894 /* PBXTargetDependency */,
+			);
+			name = ProImageTests;
+			productName = ProImageTests;
+			productReference = A5EFBF491D9BA54700EFE894 /* ProImageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -107,6 +216,14 @@
 				TargetAttributes = {
 					A51265EA1D9A3EED00DCABA3 = {
 						CreatedOnToolsVersion = 7.3.1;
+					};
+					A5EFBF3A1D9BA53B00EFE894 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = A51265EA1D9A3EED00DCABA3;
+					};
+					A5EFBF481D9BA54700EFE894 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = A51265EA1D9A3EED00DCABA3;
 					};
 				};
 			};
@@ -124,6 +241,8 @@
 			projectRoot = "";
 			targets = (
 				A51265EA1D9A3EED00DCABA3 /* ProImage */,
+				A5EFBF3A1D9BA53B00EFE894 /* ProImageUITests */,
+				A5EFBF481D9BA54700EFE894 /* ProImageTests */,
 			);
 		};
 /* End PBXProject section */
@@ -139,6 +258,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A5EFBF391D9BA53B00EFE894 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5EFBF471D9BA54700EFE894 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -146,13 +279,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A51265F11D9A3EEE00DCABA3 /* ViewController.swift in Sources */,
+				A57A60451DA0946300CB27B8 /* MainViewController.swift in Sources */,
+				A513FD0F1D9CD22100BAA9BF /* Image.swift in Sources */,
+				A57A60491DA0A7B900CB27B8 /* PhtotoLibraryViewController.swift in Sources */,
 				A51265EF1D9A3EEE00DCABA3 /* AppDelegate.swift in Sources */,
+				A57A60421DA090B600CB27B8 /* ImageViewController.swift in Sources */,
+				A57A60471DA0A76700CB27B8 /* CameraViewController.swift in Sources */,
 				A51265F71D9A3EEE00DCABA3 /* ProImage.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A5EFBF371D9BA53B00EFE894 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5EFBF3E1D9BA53C00EFE894 /* ProImageUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5EFBF451D9BA54700EFE894 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5EFBF4C1D9BA54700EFE894 /* ProImageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5EFBF411D9BA53C00EFE894 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A51265EA1D9A3EED00DCABA3 /* ProImage */;
+			targetProxy = A5EFBF401D9BA53C00EFE894 /* PBXContainerItemProxy */;
+		};
+		A5EFBF4F1D9BA54700EFE894 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A51265EA1D9A3EED00DCABA3 /* ProImage */;
+			targetProxy = A5EFBF4E1D9BA54700EFE894 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A51265F21D9A3EEE00DCABA3 /* Main.storyboard */ = {
@@ -281,6 +447,50 @@
 			};
 			name = Release;
 		};
+		A5EFBF421D9BA53C00EFE894 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ProImageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.sjsu.ProImageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ProImage;
+			};
+			name = Debug;
+		};
+		A5EFBF431D9BA53C00EFE894 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ProImageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.sjsu.ProImageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ProImage;
+			};
+			name = Release;
+		};
+		A5EFBF511D9BA54700EFE894 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ProImageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.sjsu.ProImageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProImage.app/ProImage";
+			};
+			name = Debug;
+		};
+		A5EFBF521D9BA54700EFE894 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ProImageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.sjsu.ProImageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProImage.app/ProImage";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -300,6 +510,25 @@
 				A51266021D9A3EEE00DCABA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5EFBF441D9BA53C00EFE894 /* Build configuration list for PBXNativeTarget "ProImageUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5EFBF421D9BA53C00EFE894 /* Debug */,
+				A5EFBF431D9BA53C00EFE894 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5EFBF501D9BA54700EFE894 /* Build configuration list for PBXNativeTarget "ProImageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5EFBF511D9BA54700EFE894 /* Debug */,
+				A5EFBF521D9BA54700EFE894 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
