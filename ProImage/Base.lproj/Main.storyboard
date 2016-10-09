@@ -97,7 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="422" y="359"/>
+            <point key="canvasLocation" x="425" y="428"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Vui-jh-ZTO">
@@ -665,13 +665,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Would you like to edit another image?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIU-gk-WbF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Would you like to edit another image?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIU-gk-WbF">
                                 <rect key="frame" x="152" y="140" width="297" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Con-Xx-KBJ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Con-Xx-KBJ">
                                 <rect key="frame" x="270" y="169" width="60" height="95"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="95" id="ExT-aL-HkL"/>
@@ -697,7 +697,7 @@
                             <constraint firstItem="Con-Xx-KBJ" firstAttribute="top" secondItem="KIU-gk-WbF" secondAttribute="bottom" constant="8" symbolic="YES" id="CXd-rj-2If"/>
                             <constraint firstItem="Con-Xx-KBJ" firstAttribute="top" secondItem="KIU-gk-WbF" secondAttribute="bottom" constant="8" symbolic="YES" id="RV5-dt-jFW"/>
                             <constraint firstItem="Con-Xx-KBJ" firstAttribute="centerX" secondItem="KIU-gk-WbF" secondAttribute="centerX" id="boH-oT-69f"/>
-                            <constraint firstItem="HFE-Ag-hML" firstAttribute="top" secondItem="Con-Xx-KBJ" secondAttribute="bottom" constant="292" id="tyI-zH-qO9"/>
+                            <constraint firstItem="HFE-Ag-hML" firstAttribute="top" secondItem="Con-Xx-KBJ" secondAttribute="bottom" constant="336" id="tyI-zH-qO9"/>
                             <constraint firstItem="KIU-gk-WbF" firstAttribute="leading" secondItem="Hc2-Zf-435" secondAttribute="leadingMargin" constant="132" id="tyW-0H-0Mt"/>
                             <constraint firstItem="KIU-gk-WbF" firstAttribute="centerX" secondItem="Hc2-Zf-435" secondAttribute="centerX" id="uzf-AK-fi0"/>
                         </constraints>
@@ -837,9 +837,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="9RR-nv-cQN"/>
-        <segue reference="foN-fD-X4f"/>
         <segue reference="NU6-1o-ttq"/>
         <segue reference="FTU-aS-NTg"/>
+        <segue reference="ucW-LN-Nng"/>
+        <segue reference="foN-fD-X4f"/>
     </inferredMetricsTieBreakers>
 </document>

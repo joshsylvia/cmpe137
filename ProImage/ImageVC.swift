@@ -10,7 +10,7 @@ import UIKit
 
 class ImageVC: UIViewController {
     
-    // NOTE: any changes to view needs to call this function.
+    // NOTE: any changes to view needs to call this fun ction.
     func updateUI() {
         imageView.setNeedsDisplay()
     }
