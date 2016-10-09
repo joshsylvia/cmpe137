@@ -12,11 +12,12 @@
 		A51265F71D9A3EEE00DCABA3 /* ProImage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A51265F51D9A3EEE00DCABA3 /* ProImage.xcdatamodeld */; };
 		A51265F91D9A3EEE00DCABA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A51265F81D9A3EEE00DCABA3 /* Assets.xcassets */; };
 		A51265FC1D9A3EEE00DCABA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A51265FA1D9A3EEE00DCABA3 /* LaunchScreen.storyboard */; };
-		A513FD0F1D9CD22100BAA9BF /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = A513FD0E1D9CD22100BAA9BF /* Image.swift */; };
-		A57A60421DA090B600CB27B8 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A60411DA090B600CB27B8 /* ImageViewController.swift */; };
-		A57A60451DA0946300CB27B8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A60441DA0946300CB27B8 /* MainViewController.swift */; };
-		A57A60471DA0A76700CB27B8 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A60461DA0A76700CB27B8 /* CameraViewController.swift */; };
-		A57A60491DA0A7B900CB27B8 /* PhtotoLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A60481DA0A7B900CB27B8 /* PhtotoLibraryViewController.swift */; };
+		A513FD0F1D9CD22100BAA9BF /* ImageV.swift in Sources */ = {isa = PBXBuildFile; fileRef = A513FD0E1D9CD22100BAA9BF /* ImageV.swift */; };
+		A57A60421DA090B600CB27B8 /* ImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A60411DA090B600CB27B8 /* ImageVC.swift */; };
+		A57A60471DA0A76700CB27B8 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A60461DA0A76700CB27B8 /* CameraVC.swift */; };
+		A57A60491DA0A7B900CB27B8 /* PhtotoLibraryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A60481DA0A7B900CB27B8 /* PhtotoLibraryVC.swift */; };
+		A57A604B1DA0B78700CB27B8 /* PhotoLibraryVCsave.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A604A1DA0B78700CB27B8 /* PhotoLibraryVCsave.swift */; };
+		A57A604D1DA0B7CA00CB27B8 /* ChooseLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A604C1DA0B7CA00CB27B8 /* ChooseLocationVC.swift */; };
 		A5EFBF3E1D9BA53C00EFE894 /* ProImageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EFBF3D1D9BA53C00EFE894 /* ProImageUITests.swift */; };
 		A5EFBF4C1D9BA54700EFE894 /* ProImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EFBF4B1D9BA54700EFE894 /* ProImageTests.swift */; };
 /* End PBXBuildFile section */
@@ -46,11 +47,12 @@
 		A51265F81D9A3EEE00DCABA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A51265FB1D9A3EEE00DCABA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A51265FD1D9A3EEE00DCABA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A513FD0E1D9CD22100BAA9BF /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
-		A57A60411DA090B600CB27B8 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
-		A57A60441DA0946300CB27B8 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		A57A60461DA0A76700CB27B8 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
-		A57A60481DA0A7B900CB27B8 /* PhtotoLibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhtotoLibraryViewController.swift; sourceTree = "<group>"; };
+		A513FD0E1D9CD22100BAA9BF /* ImageV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageV.swift; sourceTree = "<group>"; };
+		A57A60411DA090B600CB27B8 /* ImageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageVC.swift; sourceTree = "<group>"; };
+		A57A60461DA0A76700CB27B8 /* CameraVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
+		A57A60481DA0A7B900CB27B8 /* PhtotoLibraryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhtotoLibraryVC.swift; sourceTree = "<group>"; };
+		A57A604A1DA0B78700CB27B8 /* PhotoLibraryVCsave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoLibraryVCsave.swift; sourceTree = "<group>"; };
+		A57A604C1DA0B7CA00CB27B8 /* ChooseLocationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseLocationVC.swift; sourceTree = "<group>"; };
 		A5EFBF3B1D9BA53B00EFE894 /* ProImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5EFBF3D1D9BA53C00EFE894 /* ProImageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProImageUITests.swift; sourceTree = "<group>"; };
 		A5EFBF3F1D9BA53C00EFE894 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -108,14 +110,23 @@
 			isa = PBXGroup;
 			children = (
 				A51265F21D9A3EEE00DCABA3 /* Main.storyboard */,
-				A57A60461DA0A76700CB27B8 /* CameraViewController.swift */,
-				A57A60411DA090B600CB27B8 /* ImageViewController.swift */,
-				A513FD0E1D9CD22100BAA9BF /* Image.swift */,
-				A57A60441DA0946300CB27B8 /* MainViewController.swift */,
-				A57A60481DA0A7B900CB27B8 /* PhtotoLibraryViewController.swift */,
+				A57A60411DA090B600CB27B8 /* ImageVC.swift */,
+				A513FD0E1D9CD22100BAA9BF /* ImageV.swift */,
+				A534E5201DA9A33400408D86 /* ResourceFiles */,
 				A57427F51D9F38BE0087DA35 /* SupportedFiles */,
 			);
 			path = ProImage;
+			sourceTree = "<group>";
+		};
+		A534E5201DA9A33400408D86 /* ResourceFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A57A60461DA0A76700CB27B8 /* CameraVC.swift */,
+				A57A60481DA0A7B900CB27B8 /* PhtotoLibraryVC.swift */,
+				A57A604A1DA0B78700CB27B8 /* PhotoLibraryVCsave.swift */,
+				A57A604C1DA0B7CA00CB27B8 /* ChooseLocationVC.swift */,
+			);
+			name = ResourceFiles;
 			sourceTree = "<group>";
 		};
 		A57427F51D9F38BE0087DA35 /* SupportedFiles */ = {
@@ -279,12 +290,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A57A60451DA0946300CB27B8 /* MainViewController.swift in Sources */,
-				A513FD0F1D9CD22100BAA9BF /* Image.swift in Sources */,
-				A57A60491DA0A7B900CB27B8 /* PhtotoLibraryViewController.swift in Sources */,
+				A513FD0F1D9CD22100BAA9BF /* ImageV.swift in Sources */,
+				A57A604B1DA0B78700CB27B8 /* PhotoLibraryVCsave.swift in Sources */,
+				A57A60491DA0A7B900CB27B8 /* PhtotoLibraryVC.swift in Sources */,
 				A51265EF1D9A3EEE00DCABA3 /* AppDelegate.swift in Sources */,
-				A57A60421DA090B600CB27B8 /* ImageViewController.swift in Sources */,
-				A57A60471DA0A76700CB27B8 /* CameraViewController.swift in Sources */,
+				A57A604D1DA0B7CA00CB27B8 /* ChooseLocationVC.swift in Sources */,
+				A57A60421DA090B600CB27B8 /* ImageVC.swift in Sources */,
+				A57A60471DA0A76700CB27B8 /* CameraVC.swift in Sources */,
 				A51265F71D9A3EEE00DCABA3 /* ProImage.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  Image.swift
+//  ImageV.swift
 //  ProImage
 //
 //  Created by MacBook Owner on 9/28/16.
@@ -8,6 +8,8 @@
 
 import UIKit
 
-class Image: UIImageView {
+class ImageV: UIImageView {
+    
 
+    
 }
