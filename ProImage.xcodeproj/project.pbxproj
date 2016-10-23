@@ -11,8 +11,13 @@
 		A51265F41D9A3EEE00DCABA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A51265F21D9A3EEE00DCABA3 /* Main.storyboard */; };
 		A51265F71D9A3EEE00DCABA3 /* ProImage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A51265F51D9A3EEE00DCABA3 /* ProImage.xcdatamodeld */; };
 		A51265F91D9A3EEE00DCABA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A51265F81D9A3EEE00DCABA3 /* Assets.xcassets */; };
-		A51265FC1D9A3EEE00DCABA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A51265FA1D9A3EEE00DCABA3 /* LaunchScreen.storyboard */; };
-		A513FD0F1D9CD22100BAA9BF /* ImageV.swift in Sources */ = {isa = PBXBuildFile; fileRef = A513FD0E1D9CD22100BAA9BF /* ImageV.swift */; };
+		A522F8E41DBC0A5B00451229 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A522F8E31DBC0A5B00451229 /* LaunchScreen.storyboard */; };
+		A522F8E81DBC0F0A00451229 /* ImageV.swift in Sources */ = {isa = PBXBuildFile; fileRef = A522F8E71DBC0F0A00451229 /* ImageV.swift */; };
+		A522F8EC1DBC520400451229 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A522F8E91DBC520300451229 /* FBSDKCoreKit.framework */; };
+		A522F8ED1DBC520400451229 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A522F8EA1DBC520400451229 /* FBSDKLoginKit.framework */; };
+		A522F8EE1DBC520400451229 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A522F8EB1DBC520400451229 /* FBSDKShareKit.framework */; };
+		A522F8F01DBC52B900451229 /* FacebookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A522F8EF1DBC52B900451229 /* FacebookVC.swift */; };
+		A522F9051DBC78FA00451229 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A522F9041DBC78FA00451229 /* Bolts.framework */; };
 		A57A60421DA090B600CB27B8 /* ImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A60411DA090B600CB27B8 /* ImageVC.swift */; };
 		A57A60471DA0A76700CB27B8 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A60461DA0A76700CB27B8 /* CameraVC.swift */; };
 		A57A60491DA0A7B900CB27B8 /* PhtotoLibraryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A60481DA0A7B900CB27B8 /* PhtotoLibraryVC.swift */; };
@@ -45,9 +50,15 @@
 		A51265F31D9A3EEE00DCABA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A51265F61D9A3EEE00DCABA3 /* ProImage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProImage.xcdatamodel; sourceTree = "<group>"; };
 		A51265F81D9A3EEE00DCABA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A51265FB1D9A3EEE00DCABA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A51265FD1D9A3EEE00DCABA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A513FD0E1D9CD22100BAA9BF /* ImageV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageV.swift; sourceTree = "<group>"; };
+		A522F8E31DBC0A5B00451229 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A522F8E71DBC0F0A00451229 /* ImageV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageV.swift; sourceTree = "<group>"; };
+		A522F8E91DBC520300451229 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		A522F8EA1DBC520400451229 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		A522F8EB1DBC520400451229 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		A522F8EF1DBC52B900451229 /* FacebookVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookVC.swift; sourceTree = "<group>"; };
+		A522F9011DBC74DF00451229 /* ProImage-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ProImage-Bridging-Header.h"; sourceTree = "<group>"; };
+		A522F9041DBC78FA00451229 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		A57A60411DA090B600CB27B8 /* ImageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageVC.swift; sourceTree = "<group>"; };
 		A57A60461DA0A76700CB27B8 /* CameraVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		A57A60481DA0A7B900CB27B8 /* PhtotoLibraryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhtotoLibraryVC.swift; sourceTree = "<group>"; };
@@ -66,6 +77,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A522F8ED1DBC520400451229 /* FBSDKLoginKit.framework in Frameworks */,
+				A522F8EC1DBC520400451229 /* FBSDKCoreKit.framework in Frameworks */,
+				A522F8EE1DBC520400451229 /* FBSDKShareKit.framework in Frameworks */,
+				A522F9051DBC78FA00451229 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,7 +126,7 @@
 			children = (
 				A51265F21D9A3EEE00DCABA3 /* Main.storyboard */,
 				A57A60411DA090B600CB27B8 /* ImageVC.swift */,
-				A513FD0E1D9CD22100BAA9BF /* ImageV.swift */,
+				A522F8E71DBC0F0A00451229 /* ImageV.swift */,
 				A534E5201DA9A33400408D86 /* ResourceFiles */,
 				A57427F51D9F38BE0087DA35 /* SupportedFiles */,
 			);
@@ -122,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				A57A60461DA0A76700CB27B8 /* CameraVC.swift */,
+				A522F8EF1DBC52B900451229 /* FacebookVC.swift */,
 				A57A60481DA0A7B900CB27B8 /* PhtotoLibraryVC.swift */,
 				A57A604A1DA0B78700CB27B8 /* PhotoLibraryVCsave.swift */,
 				A57A604C1DA0B7CA00CB27B8 /* ChooseLocationVC.swift */,
@@ -132,10 +148,15 @@
 		A57427F51D9F38BE0087DA35 /* SupportedFiles */ = {
 			isa = PBXGroup;
 			children = (
-				A51265FA1D9A3EEE00DCABA3 /* LaunchScreen.storyboard */,
+				A522F8E31DBC0A5B00451229 /* LaunchScreen.storyboard */,
 				A51265FD1D9A3EEE00DCABA3 /* Info.plist */,
-				A51265EE1D9A3EEE00DCABA3 /* AppDelegate.swift */,
 				A51265F81D9A3EEE00DCABA3 /* Assets.xcassets */,
+				A522F9041DBC78FA00451229 /* Bolts.framework */,
+				A522F8E91DBC520300451229 /* FBSDKCoreKit.framework */,
+				A522F8EA1DBC520400451229 /* FBSDKLoginKit.framework */,
+				A522F8EB1DBC520400451229 /* FBSDKShareKit.framework */,
+				A51265EE1D9A3EEE00DCABA3 /* AppDelegate.swift */,
+				A522F9011DBC74DF00451229 /* ProImage-Bridging-Header.h */,
 				A51265F51D9A3EEE00DCABA3 /* ProImage.xcdatamodeld */,
 			);
 			name = SupportedFiles;
@@ -263,7 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A51265FC1D9A3EEE00DCABA3 /* LaunchScreen.storyboard in Resources */,
+				A522F8E41DBC0A5B00451229 /* LaunchScreen.storyboard in Resources */,
 				A51265F91D9A3EEE00DCABA3 /* Assets.xcassets in Resources */,
 				A51265F41D9A3EEE00DCABA3 /* Main.storyboard in Resources */,
 			);
@@ -290,11 +311,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A513FD0F1D9CD22100BAA9BF /* ImageV.swift in Sources */,
+				A522F8E81DBC0F0A00451229 /* ImageV.swift in Sources */,
 				A57A604B1DA0B78700CB27B8 /* PhotoLibraryVCsave.swift in Sources */,
 				A57A60491DA0A7B900CB27B8 /* PhtotoLibraryVC.swift in Sources */,
 				A51265EF1D9A3EEE00DCABA3 /* AppDelegate.swift in Sources */,
 				A57A604D1DA0B7CA00CB27B8 /* ChooseLocationVC.swift in Sources */,
+				A522F8F01DBC52B900451229 /* FacebookVC.swift in Sources */,
 				A57A60421DA090B600CB27B8 /* ImageVC.swift in Sources */,
 				A57A60471DA0A76700CB27B8 /* CameraVC.swift in Sources */,
 				A51265F71D9A3EEE00DCABA3 /* ProImage.xcdatamodeld in Sources */,
@@ -339,14 +361,6 @@
 				A51265F31D9A3EEE00DCABA3 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A51265FA1D9A3EEE00DCABA3 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A51265FB1D9A3EEE00DCABA3 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -441,10 +455,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ProImage",
+				);
 				INFOPLIST_FILE = ProImage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.sjsu.ProImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ProImage/ProImage-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -452,10 +474,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ProImage",
+				);
 				INFOPLIST_FILE = ProImage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.sjsu.ProImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ProImage/ProImage-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

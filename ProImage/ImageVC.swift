@@ -8,18 +8,31 @@
 
 import UIKit
 
-class ImageVC: UIViewController {
+class ImageVC: UIViewController, UIScrollViewDelegate {
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
     
     // NOTE: any changes to view needs to call this fun ction.
     func updateUI() {
         imageView.setNeedsDisplay()
     }
 
+    @IBOutlet weak var scrollView: UIScrollView!
     
-    @IBOutlet var imageView: ImageV!  {   didSet {
- //       imageView.dataSource = self
- //       imageView.addGestureRecognizer(UIPinchGestureRecognizer(target: imageView, action: Selector("scale:")))
-        }
+    @IBOutlet var imageView: ImageV!  {   didSet {  }
     }
 
     
@@ -30,6 +43,16 @@ class ImageVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         imageView.image = newImage
+    
+        
+    // set Scalling on zoom
+        self.scrollView.minimumZoomScale = 1.0
+        self.scrollView.maximumZoomScale = 6.0
+    }
+    
+    // Zooming view
+    func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
+        return self.imageView
     }
     
     @IBAction func saveTo(sender: UIBarButtonItem) {
