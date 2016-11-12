@@ -11,13 +11,12 @@
 		A51265F41D9A3EEE00DCABA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A51265F21D9A3EEE00DCABA3 /* Main.storyboard */; };
 		A51265F71D9A3EEE00DCABA3 /* ProImage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A51265F51D9A3EEE00DCABA3 /* ProImage.xcdatamodeld */; };
 		A51265F91D9A3EEE00DCABA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A51265F81D9A3EEE00DCABA3 /* Assets.xcassets */; };
+		A5208E961DBD7CA00004706A /* GoogleDriveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5208E951DBD7CA00004706A /* GoogleDriveVC.swift */; };
 		A522F8E41DBC0A5B00451229 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A522F8E31DBC0A5B00451229 /* LaunchScreen.storyboard */; };
 		A522F8E81DBC0F0A00451229 /* ImageV.swift in Sources */ = {isa = PBXBuildFile; fileRef = A522F8E71DBC0F0A00451229 /* ImageV.swift */; };
 		A522F8EC1DBC520400451229 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A522F8E91DBC520300451229 /* FBSDKCoreKit.framework */; };
 		A522F8ED1DBC520400451229 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A522F8EA1DBC520400451229 /* FBSDKLoginKit.framework */; };
-		A522F8EE1DBC520400451229 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A522F8EB1DBC520400451229 /* FBSDKShareKit.framework */; };
 		A522F8F01DBC52B900451229 /* FacebookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A522F8EF1DBC52B900451229 /* FacebookVC.swift */; };
-		A522F9051DBC78FA00451229 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A522F9041DBC78FA00451229 /* Bolts.framework */; };
 		A57A60421DA090B600CB27B8 /* ImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A60411DA090B600CB27B8 /* ImageVC.swift */; };
 		A57A60471DA0A76700CB27B8 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A60461DA0A76700CB27B8 /* CameraVC.swift */; };
 		A57A60491DA0A7B900CB27B8 /* PhtotoLibraryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A60481DA0A7B900CB27B8 /* PhtotoLibraryVC.swift */; };
@@ -25,6 +24,15 @@
 		A57A604D1DA0B7CA00CB27B8 /* ChooseLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A604C1DA0B7CA00CB27B8 /* ChooseLocationVC.swift */; };
 		A5EFBF3E1D9BA53C00EFE894 /* ProImageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EFBF3D1D9BA53C00EFE894 /* ProImageUITests.swift */; };
 		A5EFBF4C1D9BA54700EFE894 /* ProImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EFBF4B1D9BA54700EFE894 /* ProImageTests.swift */; };
+		CE01E52E1DD6F6D800CE386E /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A522F8EB1DBC520400451229 /* FBSDKShareKit.framework */; };
+		CE01E5301DD6F8D500CE386E /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A522F9041DBC78FA00451229 /* Bolts.framework */; };
+		CE01E5311DD6F8D500CE386E /* Bolts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A522F9041DBC78FA00451229 /* Bolts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE01E5331DD6F8D500CE386E /* FBSDKCoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A522F8E91DBC520300451229 /* FBSDKCoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE01E5351DD6F8D500CE386E /* FBSDKLoginKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A522F8EA1DBC520400451229 /* FBSDKLoginKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE01E5371DD6F8D500CE386E /* FBSDKShareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A522F8EB1DBC520400451229 /* FBSDKShareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE01E5391DD6F97900CE386E /* Pods_ProImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ABCF39196E4FD1CBDF5CAC2 /* Pods_ProImage.framework */; };
+		CE01E53A1DD6F97900CE386E /* Pods_ProImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9ABCF39196E4FD1CBDF5CAC2 /* Pods_ProImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE01E53C1DD7A37B00CE386E /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE01E53B1DD7A37B00CE386E /* WebVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,13 +52,35 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CE01E5381DD6F8D600CE386E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CE01E5371DD6F8D500CE386E /* FBSDKShareKit.framework in Embed Frameworks */,
+				CE01E5311DD6F8D500CE386E /* Bolts.framework in Embed Frameworks */,
+				CE01E53A1DD6F97900CE386E /* Pods_ProImage.framework in Embed Frameworks */,
+				CE01E5331DD6F8D500CE386E /* FBSDKCoreKit.framework in Embed Frameworks */,
+				CE01E5351DD6F8D500CE386E /* FBSDKLoginKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1A866E227B76ED6B1FC419F6 /* Pods-ProImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProImage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProImage/Pods-ProImage.debug.xcconfig"; sourceTree = "<group>"; };
+		75DE15F113928E28F80C6153 /* Pods-ProImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProImage.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProImage/Pods-ProImage.release.xcconfig"; sourceTree = "<group>"; };
+		9ABCF39196E4FD1CBDF5CAC2 /* Pods_ProImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A51265EB1D9A3EEE00DCABA3 /* ProImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A51265EE1D9A3EEE00DCABA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A51265F31D9A3EEE00DCABA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A51265F61D9A3EEE00DCABA3 /* ProImage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProImage.xcdatamodel; sourceTree = "<group>"; };
 		A51265F81D9A3EEE00DCABA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A51265FD1D9A3EEE00DCABA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5208E951DBD7CA00004706A /* GoogleDriveVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDriveVC.swift; sourceTree = "<group>"; };
 		A522F8E31DBC0A5B00451229 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A522F8E71DBC0F0A00451229 /* ImageV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageV.swift; sourceTree = "<group>"; };
 		A522F8E91DBC520300451229 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
@@ -70,6 +100,7 @@
 		A5EFBF491D9BA54700EFE894 /* ProImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5EFBF4B1D9BA54700EFE894 /* ProImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProImageTests.swift; sourceTree = "<group>"; };
 		A5EFBF4D1D9BA54700EFE894 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE01E53B1DD7A37B00CE386E /* WebVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +110,9 @@
 			files = (
 				A522F8ED1DBC520400451229 /* FBSDKLoginKit.framework in Frameworks */,
 				A522F8EC1DBC520400451229 /* FBSDKCoreKit.framework in Frameworks */,
-				A522F8EE1DBC520400451229 /* FBSDKShareKit.framework in Frameworks */,
-				A522F9051DBC78FA00451229 /* Bolts.framework in Frameworks */,
+				CE01E5391DD6F97900CE386E /* Pods_ProImage.framework in Frameworks */,
+				CE01E52E1DD6F6D800CE386E /* FBSDKShareKit.framework in Frameworks */,
+				CE01E5301DD6F8D500CE386E /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +133,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59B13BDD1B561A63D9ADB293 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A866E227B76ED6B1FC419F6 /* Pods-ProImage.debug.xcconfig */,
+				75DE15F113928E28F80C6153 /* Pods-ProImage.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A51265E21D9A3EED00DCABA3 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +149,8 @@
 				A5EFBF3C1D9BA53B00EFE894 /* ProImageUITests */,
 				A5EFBF4A1D9BA54700EFE894 /* ProImageTests */,
 				A51265EC1D9A3EEE00DCABA3 /* Products */,
+				59B13BDD1B561A63D9ADB293 /* Pods */,
+				FB35F28FC04A0B6ABD57CC78 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,9 +181,11 @@
 			children = (
 				A57A60461DA0A76700CB27B8 /* CameraVC.swift */,
 				A522F8EF1DBC52B900451229 /* FacebookVC.swift */,
+				CE01E53B1DD7A37B00CE386E /* WebVC.swift */,
 				A57A60481DA0A7B900CB27B8 /* PhtotoLibraryVC.swift */,
 				A57A604A1DA0B78700CB27B8 /* PhotoLibraryVCsave.swift */,
 				A57A604C1DA0B7CA00CB27B8 /* ChooseLocationVC.swift */,
+				A5208E951DBD7CA00004706A /* GoogleDriveVC.swift */,
 			);
 			name = ResourceFiles;
 			sourceTree = "<group>";
@@ -180,6 +225,14 @@
 			path = ProImageTests;
 			sourceTree = "<group>";
 		};
+		FB35F28FC04A0B6ABD57CC78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9ABCF39196E4FD1CBDF5CAC2 /* Pods_ProImage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -187,9 +240,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A51266001D9A3EEE00DCABA3 /* Build configuration list for PBXNativeTarget "ProImage" */;
 			buildPhases = (
+				04497FB5F15D8A1F22BED8B5 /* [CP] Check Pods Manifest.lock */,
 				A51265E71D9A3EED00DCABA3 /* Sources */,
 				A51265E81D9A3EED00DCABA3 /* Frameworks */,
 				A51265E91D9A3EED00DCABA3 /* Resources */,
+				6DCADC44D634F0E93D00EBEA /* [CP] Embed Pods Frameworks */,
+				8847C63BB3E591F1380B0F87 /* [CP] Copy Pods Resources */,
+				CE01E5381DD6F8D600CE386E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -243,18 +300,22 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "MacBook Owner";
 				TargetAttributes = {
 					A51265EA1D9A3EED00DCABA3 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 7BHCDJ55EZ;
+						LastSwiftMigration = 0810;
 					};
 					A5EFBF3A1D9BA53B00EFE894 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = A51265EA1D9A3EED00DCABA3;
 					};
 					A5EFBF481D9BA54700EFE894 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = A51265EA1D9A3EED00DCABA3;
 					};
 				};
@@ -306,6 +367,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04497FB5F15D8A1F22BED8B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6DCADC44D634F0E93D00EBEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProImage/Pods-ProImage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8847C63BB3E591F1380B0F87 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProImage/Pods-ProImage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A51265E71D9A3EED00DCABA3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -315,11 +424,13 @@
 				A57A604B1DA0B78700CB27B8 /* PhotoLibraryVCsave.swift in Sources */,
 				A57A60491DA0A7B900CB27B8 /* PhtotoLibraryVC.swift in Sources */,
 				A51265EF1D9A3EEE00DCABA3 /* AppDelegate.swift in Sources */,
+				A5208E961DBD7CA00004706A /* GoogleDriveVC.swift in Sources */,
 				A57A604D1DA0B7CA00CB27B8 /* ChooseLocationVC.swift in Sources */,
 				A522F8F01DBC52B900451229 /* FacebookVC.swift in Sources */,
 				A57A60421DA090B600CB27B8 /* ImageVC.swift in Sources */,
 				A57A60471DA0A76700CB27B8 /* CameraVC.swift in Sources */,
 				A51265F71D9A3EEE00DCABA3 /* ProImage.xcdatamodeld in Sources */,
+				CE01E53C1DD7A37B00CE386E /* WebVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,10 +491,13 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -426,10 +540,13 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -446,6 +563,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -453,37 +571,45 @@
 		};
 		A51266011D9A3EEE00DCABA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A866E227B76ED6B1FC419F6 /* Pods-ProImage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 7BHCDJ55EZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ProImage",
 				);
 				INFOPLIST_FILE = ProImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.sjsu.ProImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ProImage/ProImage-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		A51266021D9A3EEE00DCABA3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75DE15F113928E28F80C6153 /* Pods-ProImage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 7BHCDJ55EZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ProImage",
 				);
 				INFOPLIST_FILE = ProImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.sjsu.ProImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ProImage/ProImage-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -495,6 +621,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.sjsu.ProImageUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = ProImage;
 			};
 			name = Debug;
@@ -506,6 +633,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.sjsu.ProImageUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = ProImage;
 			};
 			name = Release;
@@ -517,6 +645,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.sjsu.ProImageTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProImage.app/ProImage";
 			};
 			name = Debug;
@@ -528,6 +657,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.sjsu.ProImageTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProImage.app/ProImage";
 			};
 			name = Release;

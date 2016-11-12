@@ -11,14 +11,14 @@ import UIKit
 class ChooseLocationVC: UIViewController {
     
     
-    @IBOutlet var imageView: UIImageView!
+    @IBOutlet var imageView1: UIImageView!
     
 
     // transfer file from PhotoLibrary.swift
     var newImage: UIImage!
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageView.image = newImage
+        imageView1.image = newImage
     }
     
     
@@ -34,7 +34,7 @@ class ChooseLocationVC: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "g") {
             let dvc = segue.destinationViewController as! PhotoLibraryVCsave
-            dvc.newImage = imageView.image
+            dvc.newImage = imageView1.image
         }
         
         
