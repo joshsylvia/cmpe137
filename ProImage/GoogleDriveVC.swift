@@ -53,7 +53,7 @@ class GoogleDriveVC: UIViewController {
     // and perform API calls
     override func viewDidAppear(animated: Bool) {
         if let authorizer = service.authorizer,
-            canAuth = authorizer.canAuthorize where canAuth {
+            let canAuth = authorizer.canAuthorize where canAuth {
             fetchFiles()
         } else {
             presentViewController(

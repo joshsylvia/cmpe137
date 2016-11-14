@@ -14,8 +14,6 @@
 		A5208E961DBD7CA00004706A /* GoogleDriveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5208E951DBD7CA00004706A /* GoogleDriveVC.swift */; };
 		A522F8E41DBC0A5B00451229 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A522F8E31DBC0A5B00451229 /* LaunchScreen.storyboard */; };
 		A522F8E81DBC0F0A00451229 /* ImageV.swift in Sources */ = {isa = PBXBuildFile; fileRef = A522F8E71DBC0F0A00451229 /* ImageV.swift */; };
-		A522F8EC1DBC520400451229 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A522F8E91DBC520300451229 /* FBSDKCoreKit.framework */; };
-		A522F8ED1DBC520400451229 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A522F8EA1DBC520400451229 /* FBSDKLoginKit.framework */; };
 		A522F8F01DBC52B900451229 /* FacebookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A522F8EF1DBC52B900451229 /* FacebookVC.swift */; };
 		A57A60421DA090B600CB27B8 /* ImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A60411DA090B600CB27B8 /* ImageVC.swift */; };
 		A57A60471DA0A76700CB27B8 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A60461DA0A76700CB27B8 /* CameraVC.swift */; };
@@ -24,15 +22,17 @@
 		A57A604D1DA0B7CA00CB27B8 /* ChooseLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A604C1DA0B7CA00CB27B8 /* ChooseLocationVC.swift */; };
 		A5EFBF3E1D9BA53C00EFE894 /* ProImageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EFBF3D1D9BA53C00EFE894 /* ProImageUITests.swift */; };
 		A5EFBF4C1D9BA54700EFE894 /* ProImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EFBF4B1D9BA54700EFE894 /* ProImageTests.swift */; };
-		CE01E52E1DD6F6D800CE386E /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A522F8EB1DBC520400451229 /* FBSDKShareKit.framework */; };
-		CE01E5301DD6F8D500CE386E /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A522F9041DBC78FA00451229 /* Bolts.framework */; };
-		CE01E5311DD6F8D500CE386E /* Bolts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A522F9041DBC78FA00451229 /* Bolts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CE01E5331DD6F8D500CE386E /* FBSDKCoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A522F8E91DBC520300451229 /* FBSDKCoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CE01E5351DD6F8D500CE386E /* FBSDKLoginKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A522F8EA1DBC520400451229 /* FBSDKLoginKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CE01E5371DD6F8D500CE386E /* FBSDKShareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A522F8EB1DBC520400451229 /* FBSDKShareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CE01E5391DD6F97900CE386E /* Pods_ProImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ABCF39196E4FD1CBDF5CAC2 /* Pods_ProImage.framework */; };
-		CE01E53A1DD6F97900CE386E /* Pods_ProImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9ABCF39196E4FD1CBDF5CAC2 /* Pods_ProImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CE01E53C1DD7A37B00CE386E /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE01E53B1DD7A37B00CE386E /* WebVC.swift */; };
+		CE2F685C1DD7D80900983556 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A522F9041DBC78FA00451229 /* Bolts.framework */; };
+		CE2F685D1DD7D80900983556 /* Bolts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A522F9041DBC78FA00451229 /* Bolts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE2F685E1DD7D80900983556 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A522F8E91DBC520300451229 /* FBSDKCoreKit.framework */; };
+		CE2F685F1DD7D80900983556 /* FBSDKCoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A522F8E91DBC520300451229 /* FBSDKCoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE2F68601DD7D80900983556 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A522F8EA1DBC520400451229 /* FBSDKLoginKit.framework */; };
+		CE2F68611DD7D80900983556 /* FBSDKLoginKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A522F8EA1DBC520400451229 /* FBSDKLoginKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE2F68621DD7D80900983556 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A522F8EB1DBC520400451229 /* FBSDKShareKit.framework */; };
+		CE2F68631DD7D80900983556 /* FBSDKShareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A522F8EB1DBC520400451229 /* FBSDKShareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE2F68651DD7D81300983556 /* Pods_ProImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ABCF39196E4FD1CBDF5CAC2 /* Pods_ProImage.framework */; };
+		CE2F68661DD7D81300983556 /* Pods_ProImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9ABCF39196E4FD1CBDF5CAC2 /* Pods_ProImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,17 +53,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		CE01E5381DD6F8D600CE386E /* Embed Frameworks */ = {
+		CE2F68641DD7D80900983556 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CE01E5371DD6F8D500CE386E /* FBSDKShareKit.framework in Embed Frameworks */,
-				CE01E5311DD6F8D500CE386E /* Bolts.framework in Embed Frameworks */,
-				CE01E53A1DD6F97900CE386E /* Pods_ProImage.framework in Embed Frameworks */,
-				CE01E5331DD6F8D500CE386E /* FBSDKCoreKit.framework in Embed Frameworks */,
-				CE01E5351DD6F8D500CE386E /* FBSDKLoginKit.framework in Embed Frameworks */,
+				CE2F68631DD7D80900983556 /* FBSDKShareKit.framework in Embed Frameworks */,
+				CE2F685D1DD7D80900983556 /* Bolts.framework in Embed Frameworks */,
+				CE2F68661DD7D81300983556 /* Pods_ProImage.framework in Embed Frameworks */,
+				CE2F685F1DD7D80900983556 /* FBSDKCoreKit.framework in Embed Frameworks */,
+				CE2F68611DD7D80900983556 /* FBSDKLoginKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,11 +108,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A522F8ED1DBC520400451229 /* FBSDKLoginKit.framework in Frameworks */,
-				A522F8EC1DBC520400451229 /* FBSDKCoreKit.framework in Frameworks */,
-				CE01E5391DD6F97900CE386E /* Pods_ProImage.framework in Frameworks */,
-				CE01E52E1DD6F6D800CE386E /* FBSDKShareKit.framework in Frameworks */,
-				CE01E5301DD6F8D500CE386E /* Bolts.framework in Frameworks */,
+				CE2F68621DD7D80900983556 /* FBSDKShareKit.framework in Frameworks */,
+				CE2F685C1DD7D80900983556 /* Bolts.framework in Frameworks */,
+				CE2F68651DD7D81300983556 /* Pods_ProImage.framework in Frameworks */,
+				CE2F685E1DD7D80900983556 /* FBSDKCoreKit.framework in Frameworks */,
+				CE2F68601DD7D80900983556 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,7 +246,7 @@
 				A51265E91D9A3EED00DCABA3 /* Resources */,
 				6DCADC44D634F0E93D00EBEA /* [CP] Embed Pods Frameworks */,
 				8847C63BB3E591F1380B0F87 /* [CP] Copy Pods Resources */,
-				CE01E5381DD6F8D600CE386E /* Embed Frameworks */,
+				CE2F68641DD7D80900983556 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

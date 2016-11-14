@@ -1,4 +1,4 @@
-//
+    //
 //  WebVC.swift
 //  ProImage
 //
@@ -9,26 +9,58 @@
 import UIKit
 
 
-class WebVC: UIViewController {
-/*
-    @IBOutlet weak var WebView: UIWebView!
+class WebVC: UIViewController, UIWebViewDelegate {
+ 
+    
+    @IBOutlet weak var webView: UIWebView!
+    
+    @IBOutlet weak var textField: UITextField!
+ 
+    @IBOutlet weak var imagePicked: UIImageView!
+
     
     
+    @IBAction func saveText(sender: UIButton) {
+        print("\(textField)")
+        let url:NSURL? = NSURL(string: textField.text!)
+        let data:NSData? = NSData(contentsOfURL : url!)
+        let image = UIImage(data : data!)!
+        imagePicked.image = image
+
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
  
- override func viewDidLoad() {
- super.viewDidLoad()
+        let URLimages = NSURL(string: "https://www.google.com/imghp?hl=en&tab=wi&authuser=0&ei=QXAnWOumHsGL0gLajrXACA&ved=0EKouCBgoAQ")
+        webView.loadRequest(NSURLRequest(URL: URLimages!))
  
- let URLimages = NSURL(string: "http://www.google.com" )
- //https://www.google.com/imghp?hl=en&tab=wi&authuser=0&ei=QXAnWOumHsGL0gLajrXACA&ved=0EKouCBgoAQ"
- webView.loadRequest(NSURLRequest(URL: URLimages!))
+        
+
+        
+    }
  
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
  
+    }
  
- }
- 
- override func didReceiveMemoryWarning() {
- super.didReceiveMemoryWarning()
- 
- }
- */
+    
+    
+    @IBAction func Edit(sender: UIBarButtonItem) {
+        
+        self.performSegueWithIdentifier("e", sender: self)
+    }
+    
+    
+    // moves image to next view controller
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+      //  if (segue.identifier == "e") {
+            let dvc = segue.destinationViewController as! ImageVC
+            dvc.newImage = imagePicked.image
+            
+            
+       // }
+    }
+    
 }
