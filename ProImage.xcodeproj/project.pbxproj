@@ -101,6 +101,10 @@
 		A5EFBF4B1D9BA54700EFE894 /* ProImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProImageTests.swift; sourceTree = "<group>"; };
 		A5EFBF4D1D9BA54700EFE894 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE01E53B1DD7A37B00CE386E /* WebVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
+		CE2DB0DB1DEF953F003AD7F0 /* GoogleAPIClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleAPIClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE2DB0DE1DEF953F003AD7F0 /* GTMOAuth2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GTMOAuth2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE2DB0E11DEF953F003AD7F0 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE2DB0E41DEF953F003AD7F0 /* Pods_ProImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_ProImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,10 @@
 		A51265E21D9A3EED00DCABA3 = {
 			isa = PBXGroup;
 			children = (
+				CE2DB0E41DEF953F003AD7F0 /* Pods_ProImage.framework */,
+				CE2DB0E11DEF953F003AD7F0 /* GTMSessionFetcher.framework */,
+				CE2DB0DE1DEF953F003AD7F0 /* GTMOAuth2.framework */,
+				CE2DB0DB1DEF953F003AD7F0 /* GoogleAPIClient.framework */,
 				A51265ED1D9A3EEE00DCABA3 /* ProImage */,
 				A5EFBF3C1D9BA53B00EFE894 /* ProImageUITests */,
 				A5EFBF4A1D9BA54700EFE894 /* ProImageTests */,
@@ -310,11 +318,13 @@
 					};
 					A5EFBF3A1D9BA53B00EFE894 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 7BHCDJ55EZ;
 						LastSwiftMigration = 0810;
 						TestTargetID = A51265EA1D9A3EED00DCABA3;
 					};
 					A5EFBF481D9BA54700EFE894 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 7BHCDJ55EZ;
 						LastSwiftMigration = 0810;
 						TestTargetID = A51265EA1D9A3EED00DCABA3;
 					};
@@ -617,6 +627,7 @@
 		A5EFBF421D9BA53C00EFE894 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 7BHCDJ55EZ;
 				INFOPLIST_FILE = ProImageUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.sjsu.ProImageUITests;
@@ -629,6 +640,7 @@
 		A5EFBF431D9BA53C00EFE894 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 7BHCDJ55EZ;
 				INFOPLIST_FILE = ProImageUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.sjsu.ProImageUITests;
@@ -641,6 +653,7 @@
 		A5EFBF511D9BA54700EFE894 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 7BHCDJ55EZ;
 				INFOPLIST_FILE = ProImageTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.sjsu.ProImageTests;
@@ -653,6 +666,7 @@
 		A5EFBF521D9BA54700EFE894 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 7BHCDJ55EZ;
 				INFOPLIST_FILE = ProImageTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.sjsu.ProImageTests;

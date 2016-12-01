@@ -16,6 +16,7 @@ class ChooseLocationVC: UIViewController {
 
     // transfer file from PhotoLibrary.swift
     var newImage: UIImage!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         imageView1.image = newImage

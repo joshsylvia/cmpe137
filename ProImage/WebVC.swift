@@ -18,27 +18,23 @@ class WebVC: UIViewController, UIWebViewDelegate {
  
     @IBOutlet weak var imagePicked: UIImageView!
 
+    // Loads google images
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let URLimages = NSURL(string: "https://www.google.com/imghp?hl=en&tab=wi&authuser=0&ei=QXAnWOumHsGL0gLajrXACA&ved=0EKouCBgoAQ")
+        webView.loadRequest(NSURLRequest(URL: URLimages!))
+    }
     
-    
+    // saves URL to image view
     @IBAction func saveText(sender: UIButton) {
-        print("\(textField)")
         let url:NSURL? = NSURL(string: textField.text!)
         let data:NSData? = NSData(contentsOfURL : url!)
         let image = UIImage(data : data!)!
         imagePicked.image = image
-
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
- 
-        let URLimages = NSURL(string: "https://www.google.com/imghp?hl=en&tab=wi&authuser=0&ei=QXAnWOumHsGL0gLajrXACA&ved=0EKouCBgoAQ")
-        webView.loadRequest(NSURLRequest(URL: URLimages!))
- 
-        
 
-        
-    }
  
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -55,12 +51,9 @@ class WebVC: UIViewController, UIWebViewDelegate {
     
     // moves image to next view controller
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-      //  if (segue.identifier == "e") {
             let dvc = segue.destinationViewController as! ImageVC
             dvc.newImage = imagePicked.image
-            
-            
-       // }
+
     }
     
 }
