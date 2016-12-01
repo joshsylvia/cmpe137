@@ -7,9 +7,9 @@
 //
 
 import UIKit
-
-class PhotoLibraryVCsave: UIViewController, UIImagePickerControllerDelegate,
-UINavigationControllerDelegate  {
+//, UIImagePickerControllerDelegate,
+//UINavigationControllerDelegate
+class PhotoLibraryVCsave: UIViewController {
   
     
     @IBOutlet var imageView: UIImageView!
@@ -29,4 +29,5 @@ UINavigationControllerDelegate  {
             UIImageWriteToSavedPhotosAlbum(compressedJPGImage!, nil, nil, nil)
     
     }
+ 
 }

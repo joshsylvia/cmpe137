@@ -15,29 +15,29 @@ class ChooseLocationVC: UIViewController {
     
 
     // transfer file from PhotoLibrary.swift
-    var newImage: UIImage!
+    var newImage1: UIImage!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageView1.image = newImage
+        imageView1.image = newImage1
     }
     
     
     @IBAction func gallery(sender: AnyObject) {
         performSegueWithIdentifier("g", sender: self)
+
     }
 
-    
-    
-    
-    
     // moves image to next view controller
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "g") {
             let dvc = segue.destinationViewController as! PhotoLibraryVCsave
             dvc.newImage = imageView1.image
         }
-        
+        if (segue.identifier == "f") {
+            let dvc = segue.destinationViewController as! facebookVCsave
+            dvc.newImage = imageView1.image
+        }
         
     }
     
