@@ -31,6 +31,7 @@
 		CE2F68611DD7D80900983556 /* FBSDKLoginKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A522F8EA1DBC520400451229 /* FBSDKLoginKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CE2F68621DD7D80900983556 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A522F8EB1DBC520400451229 /* FBSDKShareKit.framework */; };
 		CE2F68631DD7D80900983556 /* FBSDKShareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A522F8EB1DBC520400451229 /* FBSDKShareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE4370DC1DF00262002ADD0C /* FacebookVCSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4370DB1DF00262002ADD0C /* FacebookVCSave.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		A5EFBF4B1D9BA54700EFE894 /* ProImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProImageTests.swift; sourceTree = "<group>"; };
 		A5EFBF4D1D9BA54700EFE894 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE01E53B1DD7A37B00CE386E /* WebVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
+		CE4370DB1DF00262002ADD0C /* FacebookVCSave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookVCSave.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 				A57A604A1DA0B78700CB27B8 /* PhotoLibraryVCsave.swift */,
 				A57A604C1DA0B7CA00CB27B8 /* ChooseLocationVC.swift */,
 				A5208E951DBD7CA00004706A /* GoogleDriveVC.swift */,
+				CE4370DB1DF00262002ADD0C /* FacebookVCSave.swift */,
 			);
 			name = ResourceFiles;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				A522F8F01DBC52B900451229 /* FacebookVC.swift in Sources */,
 				A57A60421DA090B600CB27B8 /* ImageVC.swift in Sources */,
 				A57A60471DA0A76700CB27B8 /* CameraVC.swift in Sources */,
+				CE4370DC1DF00262002ADD0C /* FacebookVCSave.swift in Sources */,
 				A51265F71D9A3EEE00DCABA3 /* ProImage.xcdatamodeld in Sources */,
 				CE01E53C1DD7A37B00CE386E /* WebVC.swift in Sources */,
 			);

@@ -22,12 +22,15 @@ class ChooseLocationVC: UIViewController {
         imageView1.image = newImage1
     }
     
-    
+
     @IBAction func gallery(sender: AnyObject) {
         performSegueWithIdentifier("g", sender: self)
 
     }
-
+    @IBAction func facebook(sender: AnyObject) {
+        performSegueWithIdentifier("f", sender: self)
+        
+    }
     // moves image to next view controller
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "g") {
@@ -35,7 +38,7 @@ class ChooseLocationVC: UIViewController {
             dvc.newImage = imageView1.image
         }
         if (segue.identifier == "f") {
-            let dvc = segue.destinationViewController as! facebookVCsave
+            let dvc = segue.destinationViewController as! FacebookVCsave
             dvc.newImage = imageView1.image
         }
         
