@@ -7,8 +7,7 @@
 //
 
 import UIKit
-//, UIImagePickerControllerDelegate,
-//UINavigationControllerDelegate
+
 class PhotoLibraryVCsave: UIViewController {
   
     
