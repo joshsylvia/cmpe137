@@ -9,19 +9,6 @@
 import UIKit
 
 class ImageVC: UIViewController, UIScrollViewDelegate {
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 
     
     
@@ -61,9 +48,9 @@ class ImageVC: UIViewController, UIScrollViewDelegate {
     
     // moves image to next view controller
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if (segue.identifier == "s") {
+     //   if (segue.identifier == "s") {
             let dvc = segue.destinationViewController as! ChooseLocationVC
-            dvc.newImage = imageView.image
-        }
+            dvc.newImage1 = imageView.image
+       // }
     }
 }
