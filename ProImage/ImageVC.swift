@@ -9,8 +9,6 @@
 import UIKit
 
 class ImageVC: UIViewController, UIScrollViewDelegate {
-
-    
     
     // NOTE: any changes to view needs to call this fun ction.
     func updateUI() {
