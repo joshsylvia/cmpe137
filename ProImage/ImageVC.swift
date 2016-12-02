@@ -21,8 +21,6 @@ class ImageVC: UIViewController, UIScrollViewDelegate {
     }
 
     
-    
-    
     // transfer file from PhotoLibrary.swift
     var newImage: UIImage!
     override func viewDidLoad() {
