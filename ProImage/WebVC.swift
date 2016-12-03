@@ -44,16 +44,16 @@ class WebVC: UIViewController, UIWebViewDelegate {
     
     
     @IBAction func Edit(sender: UIBarButtonItem) {
-        
         self.performSegueWithIdentifier("e", sender: self)
     }
     
     
     // moves image to next view controller
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "e") {
             let dvc = segue.destinationViewController as! ImageVC
             dvc.newImage = imagePicked.image
-
+        }
     }
     
 }

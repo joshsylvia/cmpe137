@@ -17,6 +17,33 @@ class FacebookVC: UIViewController {
        // button.readPermissions = ["email"]
         return button
     }()
+
+ //   @IBOutlet weak var fbImage: UIImageView!
+    
+    var fbImage: UIImage!
+/*    // Assuming you have a UIImage reference
+    UIImage *fbImage = ...;
+    FBSDKSharePhotoContent *content = [[FBSDKSharePhotoContent alloc] init];
+    content.photos = @[[FBSDKSharePhoto photoWithImage:someImage userGenerated:YES] ];
+    
+    // Assuming self implements <FBSDKSharingDelegate>
+    [FBSDKShareAPI shareWithContent:content delegate:self];
+*/
+    
+    /*
+    - (void)imagePickerController:(UIImagePickerController *)picker
+    didFinishPickingMediaWithInfo:(NSDictionary *)info
+    {
+    UIImage *image = info[UIImagePickerControllerOriginalImage];
+    
+    FBSDKSharePhoto *photo = [[FBSDKSharePhoto alloc] init];
+    photo.image = image;
+    photo.userGenerated = YES;
+    FBSDKSharePhotoContent *content = [[FBSDKSharePhotoContent alloc] init];
+    content.photos = @[photo];
+    ...
+    }
+    */
     
     
     override func viewDidLoad() {

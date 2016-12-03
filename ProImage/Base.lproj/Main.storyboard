@@ -467,6 +467,10 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V8M-YX-cCO">
+                                <rect key="frame" x="0.0" y="72" width="375" height="309"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.39791320810000003" green="0.68389250670000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -475,6 +479,9 @@
                             <constraint firstItem="E90-78-s7g" firstAttribute="leading" secondItem="8jm-t8-Gti" secondAttribute="leadingMargin" constant="-16" id="ws3-aS-6T1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="fbImage" destination="V8M-YX-cCO" id="8IV-mV-TvV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qML-gr-f3s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -876,8 +883,8 @@
         <image name="Image" width="60" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Fas-kv-CzP"/>
-        <segue reference="HzS-fU-VLy"/>
+        <segue reference="koC-pe-jyg"/>
+        <segue reference="v4K-xb-WvS"/>
         <segue reference="ZCU-hD-918"/>
     </inferredMetricsTieBreakers>
 </document>
