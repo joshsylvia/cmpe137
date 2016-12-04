@@ -32,6 +32,7 @@ class ChooseLocationVC: UIViewController {
         
     }
     
+    
     // moves image to next view controller
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "g") {
