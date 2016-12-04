@@ -13,7 +13,7 @@ class ChooseLocationVC: UIViewController {
     
     @IBOutlet var imageView1: UIImageView!
     
-
+  
     // transfer file from PhotoLibrary.swift
     var newImage1: UIImage!
     
