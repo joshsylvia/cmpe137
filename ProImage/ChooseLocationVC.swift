@@ -23,24 +23,24 @@ class ChooseLocationVC: UIViewController {
     }
     
 
-    @IBAction func gallery(sender: AnyObject) {
-        performSegueWithIdentifier("g", sender: self)
+    @IBAction func gallery(_ sender: AnyObject) {
+        performSegue(withIdentifier: "g", sender: self)
 
     }
-    @IBAction func facebook(sender: AnyObject) {
-        performSegueWithIdentifier("f", sender: self)
+    @IBAction func facebook(_ sender: AnyObject) {
+        performSegue(withIdentifier: "f", sender: self)
         
     }
     
     
     // moves image to next view controller
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "g") {
-            let dvc = segue.destinationViewController as! PhotoLibraryVCsave
+            let dvc = segue.destination as! PhotoLibraryVCsave
             dvc.newImage = imageView1.image
         }
         if (segue.identifier == "f") {
-            let dvc = segue.destinationViewController as! FacebookVCsave
+            let dvc = segue.destination as! FacebookVCsave
             dvc.newImage = imageView1.image
         }
         

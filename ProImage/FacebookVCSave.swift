@@ -22,7 +22,7 @@ class FacebookVCsave: UIViewController {
     }
     
     // save function for photolibrary
-    @IBAction func save(sender: AnyObject) {
+    @IBAction func save(_ sender: AnyObject) {
         let imageData = UIImageJPEGRepresentation(imageView.image!, 0.6)
         let compressedJPGImage = UIImage(data: imageData!)
         UIImageWriteToSavedPhotosAlbum(compressedJPGImage!, nil, nil, nil)

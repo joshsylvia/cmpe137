@@ -34,18 +34,18 @@ class ImageVC: UIViewController, UIScrollViewDelegate {
     }
     
     // Zooming view
-    func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return self.imageView
     }
     
-    @IBAction func saveTo(sender: UIBarButtonItem) {
-        self.performSegueWithIdentifier("s", sender: self)
+    @IBAction func saveTo(_ sender: UIBarButtonItem) {
+        self.performSegue(withIdentifier: "s", sender: self)
     }
     
     // moves image to next view controller
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "s") {
-            let dvc = segue.destinationViewController as! ChooseLocationVC
+            let dvc = segue.destination as! ChooseLocationVC
             dvc.newImage1 = imageView.image
         }
     }

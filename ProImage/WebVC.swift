@@ -22,14 +22,14 @@ class WebVC: UIViewController, UIWebViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let URLimages = NSURL(string: "https://www.google.com/imghp?hl=en&tab=wi&authuser=0&ei=QXAnWOumHsGL0gLajrXACA&ved=0EKouCBgoAQ")
-        webView.loadRequest(NSURLRequest(URL: URLimages!))
+        let URLimages = URL(string: "https://www.google.com/imghp?hl=en&tab=wi&authuser=0&ei=QXAnWOumHsGL0gLajrXACA&ved=0EKouCBgoAQ")
+        webView.loadRequest(URLRequest(url: URLimages!))
     }
     
     // saves URL to image view
-    @IBAction func saveText(sender: UIButton) {
-        let url:NSURL? = NSURL(string: textField.text!)
-        let data:NSData? = NSData(contentsOfURL : url!)
+    @IBAction func saveText(_ sender: UIButton) {
+        let url:URL? = URL(string: textField.text!)
+        let data:Data? = try? Data(contentsOf: url!)
         let image = UIImage(data : data!)!
         imagePicked.image = image
     }
@@ -43,15 +43,15 @@ class WebVC: UIViewController, UIWebViewDelegate {
  
     
     
-    @IBAction func Edit(sender: UIBarButtonItem) {
-        self.performSegueWithIdentifier("e", sender: self)
+    @IBAction func Edit(_ sender: UIBarButtonItem) {
+        self.performSegue(withIdentifier: "e", sender: self)
     }
     
     
     // moves image to next view controller
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "e") {
-            let dvc = segue.destinationViewController as! ImageVC
+            let dvc = segue.destination as! ImageVC
             dvc.newImage = imagePicked.image
         }
     }

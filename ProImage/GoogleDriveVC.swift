@@ -14,14 +14,14 @@ import UIKit
 class GoogleDriveVC: UIViewController {
 
     
-    private let kKeychainItemName = "Drive API"
-    private let kClientID = "71277932495-jq9ml9ap8k04spd7nuq4165b3h7ou08v.apps.googleusercontent.com"
+    fileprivate let kKeychainItemName = "Drive API"
+    fileprivate let kClientID = "71277932495-jq9ml9ap8k04spd7nuq4165b3h7ou08v.apps.googleusercontent.com"
     
     // If modifying these scopes, delete your previously saved credentials by
     // resetting the iOS simulator or uninstall the app.
-    private let scopes = [kGTLAuthScopeDriveMetadataReadonly]
+    fileprivate let scopes = [kGTLAuthScopeDriveMetadataReadonly]
     
-    private let service = GTLServiceDrive()
+    fileprivate let service = GTLServiceDrive()
     let output = UITextView()
     
     // When the view loads, create necessary subviews
@@ -30,14 +30,14 @@ class GoogleDriveVC: UIViewController {
         super.viewDidLoad()
         
         output.frame = view.bounds
-        output.editable = false
+        output.isEditable = false
         output.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0)
-        output.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
+        output.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         
         view.addSubview(output);
         
-        if let auth = GTMOAuth2ViewControllerTouch.authForGoogleFromKeychainForName(
-            kKeychainItemName,
+        if let auth = GTMOAuth2ViewControllerTouch.authForGoogleFromKeychain(
+            forName: kKeychainItemName,
             clientID: kClientID,
             clientSecret: nil) {
             service.authorizer = auth
@@ -51,12 +51,12 @@ class GoogleDriveVC: UIViewController {
     
     // When the view appears, ensure that the Drive API service is authorized
     // and perform API calls
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         if let authorizer = service.authorizer,
-            let canAuth = authorizer.canAuthorize where canAuth {
+            let canAuth = authorizer.canAuthorize, canAuth {
             fetchFiles()
         } else {
-            presentViewController(
+            present(
                 createAuthController(),
                 animated: true,
                 completion: nil
@@ -68,17 +68,17 @@ class GoogleDriveVC: UIViewController {
     func fetchFiles() {
         output.text = "Getting files..."
         let query = GTLQueryDrive.queryForFilesList()
-        query.pageSize = 10
-        query.fields = "nextPageToken, files(id, name)"
+        query?.pageSize = 10
+        query?.fields = "nextPageToken, files(id, name)"
         service.executeQuery(
-            query,
+            query!,
             delegate: self,
-            didFinishSelector: #selector(GoogleDriveVC.displayResultWithTicket(_:finishedWithObject:error:))
+            didFinish: #selector(GoogleDriveVC.displayResultWithTicket(_:finishedWithObject:error:))
         )
     }
     
     // Parse results and display
-    func displayResultWithTicket(ticket : GTLServiceTicket,
+    func displayResultWithTicket(_ ticket : GTLServiceTicket,
                                  finishedWithObject response : GTLDriveFileList,
                                                     error : NSError?) {
         
@@ -89,7 +89,7 @@ class GoogleDriveVC: UIViewController {
         
         var filesString = ""
         
-        if let files = response.files where !files.isEmpty {
+        if let files = response.files, !files.isEmpty {
             filesString += "Files:\n"
             for file in files as! [GTLDriveFile] {
                 filesString += "\(file.name) (\(file.identifier))\n"
@@ -103,8 +103,8 @@ class GoogleDriveVC: UIViewController {
     
     
     // Creates the auth controller for authorizing access to Drive API
-    private func createAuthController() -> GTMOAuth2ViewControllerTouch {
-        let scopeString = scopes.joinWithSeparator(" ")
+    fileprivate func createAuthController() -> GTMOAuth2ViewControllerTouch {
+        let scopeString = scopes.joined(separator: " ")
         return GTMOAuth2ViewControllerTouch(
             scope: scopeString,
             clientID: kClientID,
@@ -117,7 +117,7 @@ class GoogleDriveVC: UIViewController {
     
     // Handle completion of the authorization process, and update the Drive API
     // with the new credentials.
-    func viewController(vc : UIViewController,
+    func viewController(_ vc : UIViewController,
                         finishedWithAuth authResult : GTMOAuth2Authentication, error : NSError?) {
         
         if let error = error {
@@ -127,23 +127,23 @@ class GoogleDriveVC: UIViewController {
         }
         
         service.authorizer = authResult
-        dismissViewControllerAnimated(true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
     
     // Helper for showing an alert
-    func showAlert(title : String, message: String) {
+    func showAlert(_ title : String, message: String) {
         let alert = UIAlertController(
             title: title,
             message: message,
-            preferredStyle: UIAlertControllerStyle.Alert
+            preferredStyle: UIAlertControllerStyle.alert
         )
         let ok = UIAlertAction(
             title: "OK",
-            style: UIAlertActionStyle.Default,
+            style: UIAlertActionStyle.default,
             handler: nil
         )
         alert.addAction(ok)
-        presentViewController(alert, animated: true, completion: nil)
+        present(alert, animated: true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {

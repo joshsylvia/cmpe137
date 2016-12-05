@@ -14,35 +14,35 @@ UINavigationControllerDelegate {
     @IBOutlet var imagePicked: UIImageView!
     
     
-    @IBAction func captureImage(sender: AnyObject) {
+    @IBAction func captureImage(_ sender: AnyObject) {
     
-    if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera) {
+    if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) {
         let imagePicker = UIImagePickerController()
         imagePicker.delegate = self
-        imagePicker.sourceType = UIImagePickerControllerSourceType.Camera;
+        imagePicker.sourceType = UIImagePickerControllerSourceType.camera;
         imagePicker.allowsEditing = false
-        self.presentViewController(imagePicker, animated: true, completion: nil)
+        self.present(imagePicker, animated: true, completion: nil)
         }
     }
     
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
         let selectedImage:UIImage = (info[UIImagePickerControllerOriginalImage]) as! UIImage
         imagePicked.image = selectedImage
-        self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
     
     
-    @IBAction func Edit(sender: UIBarButtonItem) {
+    @IBAction func Edit(_ sender: UIBarButtonItem) {
         
-        self.performSegueWithIdentifier("e", sender: self)
+        self.performSegue(withIdentifier: "e", sender: self)
     }
     
     
     // moves image to next view controller
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "e") {
-        let dvc = segue.destinationViewController as! ImageVC
+        let dvc = segue.destination as! ImageVC
         dvc.newImage = imagePicked.image
         }
     }
