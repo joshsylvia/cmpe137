@@ -21,12 +21,27 @@ class PhotoLibraryVCsave: UIViewController {
         imageView.image = newImage
     }
     
+
     // save function for photolibrary
     @IBAction func save(_ sender: AnyObject) {
-            let imageData = UIImageJPEGRepresentation(imageView.image!, 0.6)
-            let compressedJPGImage = UIImage(data: imageData!)
-            UIImageWriteToSavedPhotosAlbum(compressedJPGImage!, nil, nil, nil)
-    
+        
+       // UIImageWriteToSavedPhotosAlbum(newImage, self,  #selector(PhotoLibraryVCsave.image(_:didFinishSavingWithError:contextInfo:)), nil)
+    //        let imageData = UIImageJPEGRepresentation(imageView.image!, 0.6)
+    //        let compressedJPGImage = UIImage(data: imageData!)
+    //        UIImageWriteToSavedPhotosAlbum(compressedJPGImage!, nil, nil, nil)
+        UIImageWriteToSavedPhotosAlbum(imageView.image!, nil, nil, nil)
     }
- 
+
+    func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+        if let error = error {
+            // we got back an error!
+            let ac = UIAlertController(title: "Save error", message: error.localizedDescription, preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
+            present(ac, animated: true)
+        } else {
+            let ac = UIAlertController(title: "Saved!", message: "Your altered image has been saved to your photos.", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
+            present(ac, animated: true)
+        }
+    }
 }
