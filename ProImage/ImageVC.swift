@@ -10,6 +10,24 @@ import UIKit
 
 class ImageVC: UIViewController, UIScrollViewDelegate {
     
+
+    
+    
+    
+    
+    
+    
+    
+    @IBAction func tapGesture(_ sender: UITapGestureRecognizer) {
+        
+        // TODO create a show/hide for Toolbar
+    }
+    
+    
+    @IBOutlet weak var toolbar: UIToolbar!
+    
+    
+    
     // NOTE: any changes to view needs to call this fun ction.
     func updateUI() {
         imageView.setNeedsDisplay()
@@ -27,7 +45,8 @@ class ImageVC: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         imageView.image = newImage
-    
+        
+
         
     // set Scalling on zoom
         self.scrollView.minimumZoomScale = 1.0

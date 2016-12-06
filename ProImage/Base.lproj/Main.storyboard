@@ -473,6 +473,13 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p3l-8V-JEi" customClass="ImageV" customModule="ProImage">
                                         <rect key="frame" x="2" y="0.0" width="379" height="603"/>
                                     </imageView>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wvj-KX-Ehr">
+                                        <rect key="frame" x="0.0" y="559" width="381" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <items>
+                                            <barButtonItem title="ADD BUTTONS" id="VgW-15-HjK"/>
+                                        </items>
+                                    </toolbar>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="p3l-8V-JEi" secondAttribute="bottom" id="6uk-pw-Ngf"/>
@@ -503,9 +510,15 @@
                     <connections>
                         <outlet property="imageView" destination="p3l-8V-JEi" id="VID-Bs-EgI"/>
                         <outlet property="scrollView" destination="mBP-Qj-SDi" id="fMN-io-Xgi"/>
+                        <outlet property="toolbar" destination="Wvj-KX-Ehr" id="9g3-Tj-STr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hYi-aj-4r1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="DCt-he-Xqk">
+                    <connections>
+                        <action selector="tapGesture:" destination="q6i-88-bcI" id="oNx-JI-xeL"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2681" y="448"/>
         </scene>
