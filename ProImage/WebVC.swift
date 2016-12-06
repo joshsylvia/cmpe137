@@ -16,6 +16,8 @@ class WebVC: UIViewController, UIWebViewDelegate {
     
     @IBOutlet weak var textField: UITextField!
  
+    
+    
     @IBOutlet weak var imagePicked: UIImageView!
  
     // Loads google images
@@ -44,16 +46,20 @@ class WebVC: UIViewController, UIWebViewDelegate {
     
     
     @IBAction func Edit(_ sender: UIBarButtonItem) {
+        let url:URL? = URL(string: textField.text!)
+        let data:Data? = try? Data(contentsOf: url!)
+        let image = UIImage(data : data!)!
+        imagePicked.image = image
         self.performSegue(withIdentifier: "e", sender: self)
     }
     
     
     // moves image to next view controller
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "e") {
+ 
             let dvc = segue.destination as! ImageVC
             dvc.newImage = imagePicked.image
-        }
+        
     }
     
 }

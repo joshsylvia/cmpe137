@@ -19,7 +19,6 @@
 		A57A60471DA0A76700CB27B8 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A60461DA0A76700CB27B8 /* CameraVC.swift */; };
 		A57A60491DA0A7B900CB27B8 /* PhtotoLibraryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A60481DA0A7B900CB27B8 /* PhtotoLibraryVC.swift */; };
 		A57A604B1DA0B78700CB27B8 /* PhotoLibraryVCsave.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A604A1DA0B78700CB27B8 /* PhotoLibraryVCsave.swift */; };
-		A57A604D1DA0B7CA00CB27B8 /* ChooseLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A604C1DA0B7CA00CB27B8 /* ChooseLocationVC.swift */; };
 		A5EFBF3E1D9BA53C00EFE894 /* ProImageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EFBF3D1D9BA53C00EFE894 /* ProImageUITests.swift */; };
 		A5EFBF4C1D9BA54700EFE894 /* ProImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EFBF4B1D9BA54700EFE894 /* ProImageTests.swift */; };
 		CE01E53C1DD7A37B00CE386E /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE01E53B1DD7A37B00CE386E /* WebVC.swift */; };
@@ -31,7 +30,6 @@
 		CE2F68611DD7D80900983556 /* FBSDKLoginKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A522F8EA1DBC520400451229 /* FBSDKLoginKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CE2F68621DD7D80900983556 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A522F8EB1DBC520400451229 /* FBSDKShareKit.framework */; };
 		CE2F68631DD7D80900983556 /* FBSDKShareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A522F8EB1DBC520400451229 /* FBSDKShareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CE4370DC1DF00262002ADD0C /* FacebookVCSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4370DB1DF00262002ADD0C /* FacebookVCSave.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,7 +88,6 @@
 		A57A60461DA0A76700CB27B8 /* CameraVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		A57A60481DA0A7B900CB27B8 /* PhtotoLibraryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhtotoLibraryVC.swift; sourceTree = "<group>"; };
 		A57A604A1DA0B78700CB27B8 /* PhotoLibraryVCsave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoLibraryVCsave.swift; sourceTree = "<group>"; };
-		A57A604C1DA0B7CA00CB27B8 /* ChooseLocationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseLocationVC.swift; sourceTree = "<group>"; };
 		A5EFBF3B1D9BA53B00EFE894 /* ProImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5EFBF3D1D9BA53C00EFE894 /* ProImageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProImageUITests.swift; sourceTree = "<group>"; };
 		A5EFBF3F1D9BA53C00EFE894 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,7 +95,6 @@
 		A5EFBF4B1D9BA54700EFE894 /* ProImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProImageTests.swift; sourceTree = "<group>"; };
 		A5EFBF4D1D9BA54700EFE894 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE01E53B1DD7A37B00CE386E /* WebVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
-		CE4370DB1DF00262002ADD0C /* FacebookVCSave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookVCSave.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,9 +177,7 @@
 				CE01E53B1DD7A37B00CE386E /* WebVC.swift */,
 				A57A60481DA0A7B900CB27B8 /* PhtotoLibraryVC.swift */,
 				A57A604A1DA0B78700CB27B8 /* PhotoLibraryVCsave.swift */,
-				A57A604C1DA0B7CA00CB27B8 /* ChooseLocationVC.swift */,
 				A5208E951DBD7CA00004706A /* GoogleDriveVC.swift */,
-				CE4370DB1DF00262002ADD0C /* FacebookVCSave.swift */,
 			);
 			name = ResourceFiles;
 			sourceTree = "<group>";
@@ -424,11 +418,9 @@
 				A57A60491DA0A7B900CB27B8 /* PhtotoLibraryVC.swift in Sources */,
 				A51265EF1D9A3EEE00DCABA3 /* AppDelegate.swift in Sources */,
 				A5208E961DBD7CA00004706A /* GoogleDriveVC.swift in Sources */,
-				A57A604D1DA0B7CA00CB27B8 /* ChooseLocationVC.swift in Sources */,
 				A522F8F01DBC52B900451229 /* FacebookVC.swift in Sources */,
 				A57A60421DA090B600CB27B8 /* ImageVC.swift in Sources */,
 				A57A60471DA0A76700CB27B8 /* CameraVC.swift in Sources */,
-				CE4370DC1DF00262002ADD0C /* FacebookVCSave.swift in Sources */,
 				A51265F71D9A3EEE00DCABA3 /* ProImage.xcdatamodeld in Sources */,
 				CE01E53C1DD7A37B00CE386E /* WebVC.swift in Sources */,
 			);

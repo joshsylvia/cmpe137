@@ -23,6 +23,7 @@ class ImageVC: UIViewController, UIScrollViewDelegate {
     
     // transfer file from PhotoLibrary.swift
     var newImage: UIImage!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         imageView.image = newImage
@@ -44,9 +45,9 @@ class ImageVC: UIViewController, UIScrollViewDelegate {
     
     // moves image to next view controller
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "s") {
+
             let dvc = segue.destination as! PhotoLibraryVCsave
             dvc.newImage = imageView.image
-        }
+
     }
 }
