@@ -18,17 +18,17 @@ class ImageVC: UIViewController, UIScrollViewDelegate {
     
     
     
-    @IBAction func tapGesture(_ sender: UITapGestureRecognizer) {
-        
-        // TODO create a show/hide for Toolbar
-    }
+    
+    
+
+    
     
     
     @IBOutlet weak var toolbar: UIToolbar!
     
     
     
-    // NOTE: any changes to view needs to call this fun ction.
+    // NOTE: any changes to view needs to call this function.
     func updateUI() {
         imageView.setNeedsDisplay()
     }
@@ -53,10 +53,16 @@ class ImageVC: UIViewController, UIScrollViewDelegate {
         self.scrollView.maximumZoomScale = 6.0
     }
     
+    
+    
+    
+    
     // Zooming view
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return self.imageView
     }
+    
+    // saving file
     @IBAction func saveTo(_ sender: UIBarButtonItem) {
 
         self.performSegue(withIdentifier: "s", sender: self)

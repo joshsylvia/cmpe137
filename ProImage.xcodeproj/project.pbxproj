@@ -21,6 +21,7 @@
 		A57A604B1DA0B78700CB27B8 /* PhotoLibraryVCsave.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A604A1DA0B78700CB27B8 /* PhotoLibraryVCsave.swift */; };
 		A5EFBF3E1D9BA53C00EFE894 /* ProImageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EFBF3D1D9BA53C00EFE894 /* ProImageUITests.swift */; };
 		A5EFBF4C1D9BA54700EFE894 /* ProImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EFBF4B1D9BA54700EFE894 /* ProImageTests.swift */; };
+		B8F7FEADC25CCB0BA38A3BA6 /* Pods_ProImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 977691DA9BE1B09F502B7AA6 /* Pods_ProImage.framework */; };
 		CE01E53C1DD7A37B00CE386E /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE01E53B1DD7A37B00CE386E /* WebVC.swift */; };
 		CE2F685C1DD7D80900983556 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A522F9041DBC78FA00451229 /* Bolts.framework */; };
 		CE2F685D1DD7D80900983556 /* Bolts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A522F9041DBC78FA00451229 /* Bolts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -69,6 +70,7 @@
 /* Begin PBXFileReference section */
 		1A866E227B76ED6B1FC419F6 /* Pods-ProImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProImage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProImage/Pods-ProImage.debug.xcconfig"; sourceTree = "<group>"; };
 		75DE15F113928E28F80C6153 /* Pods-ProImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProImage.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProImage/Pods-ProImage.release.xcconfig"; sourceTree = "<group>"; };
+		977691DA9BE1B09F502B7AA6 /* Pods_ProImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A51265EB1D9A3EEE00DCABA3 /* ProImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A51265EE1D9A3EEE00DCABA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A51265F31D9A3EEE00DCABA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				CE2F685C1DD7D80900983556 /* Bolts.framework in Frameworks */,
 				CE2F685E1DD7D80900983556 /* FBSDKCoreKit.framework in Frameworks */,
 				CE2F68601DD7D80900983556 /* FBSDKLoginKit.framework in Frameworks */,
+				B8F7FEADC25CCB0BA38A3BA6 /* Pods_ProImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +223,7 @@
 		FB35F28FC04A0B6ABD57CC78 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				977691DA9BE1B09F502B7AA6 /* Pods_ProImage.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
