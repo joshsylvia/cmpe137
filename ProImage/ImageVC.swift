@@ -15,13 +15,15 @@ class ImageVC: UIViewController, UIScrollViewDelegate {
     
     
     
-    
-    
-    
-    
+    @IBAction func text(_ sender: UIBarButtonItem) {
+    }
     
 
+    @IBAction func brush(_ sender: UIBarButtonItem) {
+    }
     
+    @IBAction func dash(_ sender: UIBarButtonItem) {
+    }
     
     
     @IBOutlet weak var toolbar: UIToolbar!
