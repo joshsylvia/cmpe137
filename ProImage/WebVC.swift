@@ -30,10 +30,15 @@ class WebVC: UIViewController, UIWebViewDelegate {
     
     // saves URL to image view
     @IBAction func saveText(_ sender: UIButton) {
-        let url:URL? = URL(string: textField.text!)
-        let data:Data? = try? Data(contentsOf: url!)
-        let image = UIImage(data : data!)!
-        imagePicked.image = image
+        let t: String = textField.text!
+        if t.contains("Please") {
+            
+        } else {
+            let url:URL? = URL(string: textField.text!)
+            let data:Data? = try? Data(contentsOf: url!)
+            let image = UIImage(data : data!)!
+            imagePicked.image = image
+        }
     }
 
 
@@ -46,10 +51,6 @@ class WebVC: UIViewController, UIWebViewDelegate {
     
     
     @IBAction func Edit(_ sender: UIBarButtonItem) {
-        let url:URL? = URL(string: textField.text!)
-        let data:Data? = try? Data(contentsOf: url!)
-        let image = UIImage(data : data!)!
-        imagePicked.image = image
         self.performSegue(withIdentifier: "e", sender: self)
     }
     
