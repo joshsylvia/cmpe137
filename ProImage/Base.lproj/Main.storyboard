@@ -444,50 +444,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="26b-TS-Ef0">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mig-no-VZA">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="Kvk-3E-V11"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Image Editor" id="ec9-KI-KdB">
-                                        <barButtonItem key="rightBarButtonItem" style="plain" id="tkF-g0-2e2">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MLy-MT-iq7">
-                                                <rect key="frame" x="305" y="7" width="54" height="30"/>
+                                    <navigationItem title="Image Editor" id="5zJ-CT-r7P">
+                                        <barButtonItem key="rightBarButtonItem" style="plain" id="aFf-np-abU">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ClA-AM-Ahn">
+                                                <rect key="frame" x="325" y="7" width="34" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Save To"/>
+                                                <state key="normal" title="Save"/>
                                                 <connections>
-                                                    <segue destination="5JQ-CL-GZf" kind="showDetail" id="Wot-y8-vM7"/>
+                                                    <segue destination="5JQ-CL-GZf" kind="showDetail" id="1on-iM-Aq3"/>
                                                 </connections>
                                             </button>
                                             <connections>
-                                                <action selector="saveTo:" destination="q6i-88-bcI" id="A0j-iM-dIl"/>
+                                                <action selector="saveTo:" destination="q6i-88-bcI" id="9nR-Nt-uFM"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mBP-Qj-SDi">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mBP-Qj-SDi">
                                 <rect key="frame" x="-6" y="64" width="381" height="603"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p3l-8V-JEi" customClass="ImageV" customModule="ProImage">
-                                        <rect key="frame" x="2" y="0.0" width="379" height="603"/>
-                                    </imageView>
-                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wvj-KX-Ehr">
-                                        <rect key="frame" x="0.0" y="559" width="381" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wvj-KX-Ehr">
+                                        <rect key="frame" x="0.0" y="560" width="381" height="44"/>
                                         <items>
                                             <barButtonItem title="ADD BUTTONS" id="VgW-15-HjK"/>
                                         </items>
                                     </toolbar>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p3l-8V-JEi" customClass="ImageV" customModule="ProImage">
+                                        <rect key="frame" x="2" y="0.0" width="379" height="603"/>
+                                    </imageView>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NPB-ci-VPi">
+                                        <rect key="frame" x="2" y="560" width="381" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <items>
+                                            <barButtonItem title="Add Button here" id="b16-T6-Xt4"/>
+                                        </items>
+                                    </toolbar>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="p3l-8V-JEi" secondAttribute="bottom" id="6uk-pw-Ngf"/>
-                                    <constraint firstItem="p3l-8V-JEi" firstAttribute="centerY" secondItem="mBP-Qj-SDi" secondAttribute="centerY" id="KZC-Xw-jnz"/>
-                                    <constraint firstAttribute="trailing" secondItem="p3l-8V-JEi" secondAttribute="trailing" id="ZHq-jA-cFU"/>
-                                    <constraint firstItem="p3l-8V-JEi" firstAttribute="top" secondItem="mBP-Qj-SDi" secondAttribute="top" id="a3H-Ql-DzE"/>
-                                    <constraint firstItem="p3l-8V-JEi" firstAttribute="leading" secondItem="mBP-Qj-SDi" secondAttribute="leading" constant="2" id="n5d-U2-6cn"/>
-                                    <constraint firstItem="p3l-8V-JEi" firstAttribute="centerX" secondItem="mBP-Qj-SDi" secondAttribute="centerX" constant="1" id="zDn-8E-er8"/>
+                                    <constraint firstItem="p3l-8V-JEi" firstAttribute="centerY" secondItem="mBP-Qj-SDi" secondAttribute="centerY" constant="1" id="64C-dv-CWx"/>
+                                    <constraint firstItem="p3l-8V-JEi" firstAttribute="top" secondItem="mBP-Qj-SDi" secondAttribute="top" constant="1" id="NCz-lq-141"/>
+                                    <constraint firstItem="p3l-8V-JEi" firstAttribute="centerX" secondItem="mBP-Qj-SDi" secondAttribute="centerX" constant="1" id="V8Y-v2-QfK"/>
+                                    <constraint firstItem="p3l-8V-JEi" firstAttribute="leading" secondItem="Wvj-KX-Ehr" secondAttribute="leading" constant="2" id="YL0-4M-zmd"/>
+                                    <constraint firstItem="p3l-8V-JEi" firstAttribute="bottom" secondItem="Wvj-KX-Ehr" secondAttribute="bottom" id="nCq-WM-yxx"/>
+                                    <constraint firstAttribute="trailing" secondItem="p3l-8V-JEi" secondAttribute="trailing" id="p1L-8Z-G9N"/>
+                                    <constraint firstItem="p3l-8V-JEi" firstAttribute="leading" secondItem="mBP-Qj-SDi" secondAttribute="leading" constant="2" id="rWN-8t-T8o"/>
+                                    <constraint firstAttribute="bottom" secondItem="p3l-8V-JEi" secondAttribute="bottom" constant="-1" id="wFm-Q2-JhJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wvj-KX-Ehr" secondAttribute="trailing" id="xL9-Oz-bEw"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="delegate" destination="q6i-88-bcI" id="fE9-2L-uGG"/>
@@ -496,13 +503,10 @@
                         </subviews>
                         <color key="backgroundColor" red="0.39791320810000003" green="0.68389250670000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="mBP-Qj-SDi" firstAttribute="top" secondItem="26b-TS-Ef0" secondAttribute="bottom" id="b1H-VM-PkO"/>
-                            <constraint firstItem="mBP-Qj-SDi" firstAttribute="trailing" secondItem="26b-TS-Ef0" secondAttribute="trailing" id="bWz-SY-Ni1"/>
-                            <constraint firstItem="26b-TS-Ef0" firstAttribute="top" secondItem="oGU-r0-EZD" secondAttribute="bottom" id="caf-rx-L9B"/>
+                            <constraint firstItem="mBP-Qj-SDi" firstAttribute="centerX" secondItem="6Qo-qx-QxU" secondAttribute="centerX" id="8vM-6l-AIR"/>
+                            <constraint firstItem="mBP-Qj-SDi" firstAttribute="top" secondItem="6Qo-qx-QxU" secondAttribute="top" constant="64" id="EXE-VY-Gzd"/>
                             <constraint firstAttribute="bottom" secondItem="mBP-Qj-SDi" secondAttribute="bottom" id="eeD-a7-EiU"/>
-                            <constraint firstItem="Q4n-Ou-3Os" firstAttribute="top" secondItem="26b-TS-Ef0" secondAttribute="bottom" constant="559" id="hFQ-n3-Y77"/>
-                            <constraint firstItem="26b-TS-Ef0" firstAttribute="centerX" secondItem="6Qo-qx-QxU" secondAttribute="centerX" id="oIv-kh-dwp"/>
-                            <constraint firstItem="mBP-Qj-SDi" firstAttribute="leading" secondItem="6Qo-qx-QxU" secondAttribute="leadingMargin" constant="-22" id="wW8-Is-hSY"/>
+                            <constraint firstItem="mBP-Qj-SDi" firstAttribute="leading" secondItem="6Qo-qx-QxU" secondAttribute="leadingMargin" constant="-19" id="wW8-Is-hSY"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -520,7 +524,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2681" y="448"/>
+            <point key="canvasLocation" x="2469.5999999999999" y="448.42578710644682"/>
         </scene>
         <!--Photo LibraryV Csave-->
         <scene sceneID="CFX-fl-Bz3">
@@ -538,18 +542,16 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="Photo Library Save" id="7ym-d6-8gK">
-                                        <barButtonItem key="rightBarButtonItem" style="plain" id="436-3W-em2">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="woI-rc-8tK">
-                                                <rect key="frame" x="325" y="7" width="34" height="30"/>
+                                        <barButtonItem key="rightBarButtonItem" style="plain" id="5IU-hO-7nN">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1is-Oi-48c">
+                                                <rect key="frame" x="276" y="7" width="83" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Save"/>
                                                 <connections>
-                                                    <segue destination="LNO-VX-dfg" kind="show" id="ZCU-hD-918"/>
+                                                    <action selector="save:" destination="5JQ-CL-GZf" eventType="touchUpInside" id="TaP-HC-6ww"/>
+                                                    <segue destination="LNO-VX-dfg" kind="showDetail" id="RlI-XQ-olx"/>
                                                 </connections>
                                             </button>
-                                            <connections>
-                                                <action selector="save:" destination="5JQ-CL-GZf" id="5yk-nm-Cea"/>
-                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -566,13 +568,15 @@
                             <constraint firstItem="I9C-oG-3Gm" firstAttribute="top" secondItem="bAw-Q9-4jc" secondAttribute="bottom" id="jAW-kG-36a"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="imageView" destination="J0V-xJ-cs6" id="xXq-DG-ZRC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sq8-nN-XRM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2681" y="1134"/>
+            <point key="canvasLocation" x="2119" y="1194"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ee4-Eb-e2g">
@@ -725,7 +729,8 @@
         <image name="Image" width="60" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="24J-vU-Kk8"/>
+        <segue reference="Fas-kv-CzP"/>
         <segue reference="7gc-8x-qNy"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
 </document>

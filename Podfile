@@ -1,4 +1,4 @@
-platform :ios, '7.0'
+platform :ios, '10.1'
 use_frameworks!
 target ‘ProImage’ do
     pod 'GoogleAPIClient/Drive', '~> 1.0.2'

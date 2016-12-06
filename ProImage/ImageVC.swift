@@ -57,8 +57,8 @@ class ImageVC: UIViewController, UIScrollViewDelegate {
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return self.imageView
     }
-    
     @IBAction func saveTo(_ sender: UIBarButtonItem) {
+
         self.performSegue(withIdentifier: "s", sender: self)
     }
     

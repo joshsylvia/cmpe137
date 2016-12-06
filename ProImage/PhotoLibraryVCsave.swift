@@ -26,10 +26,10 @@ class PhotoLibraryVCsave: UIViewController {
     @IBAction func save(_ sender: AnyObject) {
         
        // UIImageWriteToSavedPhotosAlbum(newImage, self,  #selector(PhotoLibraryVCsave.image(_:didFinishSavingWithError:contextInfo:)), nil)
-    //        let imageData = UIImageJPEGRepresentation(imageView.image!, 0.6)
-    //        let compressedJPGImage = UIImage(data: imageData!)
-    //        UIImageWriteToSavedPhotosAlbum(compressedJPGImage!, nil, nil, nil)
-        UIImageWriteToSavedPhotosAlbum(imageView.image!, nil, nil, nil)
+            let imageData = UIImageJPEGRepresentation(imageView.image!, 0.6)
+            let compressedJPGImage = UIImage(data: imageData!)
+            UIImageWriteToSavedPhotosAlbum(compressedJPGImage!, nil, nil, nil)
+       // UIImageWriteToSavedPhotosAlbum(imageView.image!, nil, nil, nil)
     }
 
     func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
