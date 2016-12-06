@@ -45,8 +45,8 @@ class ImageVC: UIViewController, UIScrollViewDelegate {
     // moves image to next view controller
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "s") {
-            let dvc = segue.destination as! ChooseLocationVC
-            dvc.newImage1 = imageView.image
+            let dvc = segue.destination as! PhotoLibraryVCsave
+            dvc.newImage = imageView.image
         }
     }
 }
