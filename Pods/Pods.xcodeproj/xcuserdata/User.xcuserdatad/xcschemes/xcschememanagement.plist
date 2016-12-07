@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>CLImageEditor.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>GTMOAuth2.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,17 +37,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>228670DE63025DD1AB3FDE4CC4A5B1E5</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>B1C4AAFAF49036C7007633DAA3C806AD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>D1A5CF89B974E970D3A71F3D763E3A88</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E659F930E031A633F33F082677B0D93A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E91D479EC97C48DEDC0ED8B85E09C173</key>
 		<dict>
 			<key>primary</key>
 			<true/>

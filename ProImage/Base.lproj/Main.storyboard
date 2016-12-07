@@ -102,9 +102,16 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="S4s-hO-9fV" kind="show" id="m2Z-mL-ptW"/>
+                                    <segue destination="alO-g6-mQd" kind="show" id="dfn-wf-96S"/>
                                 </connections>
                             </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a9b-tw-l3F">
+                                <rect key="frame" x="0.0" y="17" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem image="save" id="4qC-XR-098"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="0.39791320810000003" green="0.68389250670000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -134,10 +141,13 @@
                             <constraint firstItem="YUA-dK-b6W" firstAttribute="leading" secondItem="RnY-Dm-YyL" secondAttribute="leading" id="zFk-vJ-d0g"/>
                         </constraints>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="QF6-ao-cNQ"/>
+                    </toolbarItems>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="424.80000000000001" y="427.73613193403304"/>
+            <point key="canvasLocation" x="625" y="388"/>
         </scene>
         <!--WebVC-->
         <scene sceneID="Vui-jh-ZTO">
@@ -165,9 +175,6 @@
                                                 <state key="normal" title="Select Image">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
-                                                <connections>
-                                                    <segue destination="q6i-88-bcI" kind="show" id="7gc-8x-qNy"/>
-                                                </connections>
                                             </button>
                                             <connections>
                                                 <action selector="Edit:" destination="hq5-JP-hxs" id="n3Y-cv-bDy"/>
@@ -198,7 +205,7 @@
                                 </connections>
                             </button>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ot-2W-5J1">
-                                <rect key="frame" x="0.0" y="139" width="375" height="528"/>
+                                <rect key="frame" x="0.0" y="139" width="375" height="484"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Atc-6K-ycQ">
@@ -234,6 +241,72 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jgh-iu-sIZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1846" y="-745"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dwG-Uh-Wx0">
+            <objects>
+                <viewController id="alO-g6-mQd" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="a8V-O9-uxa"/>
+                        <viewControllerLayoutGuide type="bottom" id="deA-vu-9sO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="03p-0n-0Bj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ymM-KR-Tmc">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <tabBarItem title="New" image="new" id="oOk-Cx-j30"/>
+                                    <tabBarItem tag="1" title="Edit" image="edit" id="Eon-Xt-YUd"/>
+                                    <tabBarItem tag="2" title="Save" image="save" id="sbL-p6-4kU"/>
+                                </items>
+                                <connections>
+                                    <outlet property="delegate" destination="alO-g6-mQd" id="bSi-Dw-J3I"/>
+                                </connections>
+                            </tabBar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFO-oP-ocw">
+                                <rect key="frame" x="0.0" y="20" width="375" height="599"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nug-uw-IQA">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="415"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="default.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="02W-cD-fuA">
+                                                <rect key="frame" x="0.0" y="0.0" width="252" height="280"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="delegate" destination="alO-g6-mQd" id="UKR-Qo-xRd"/>
+                                </connections>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAh-H9-tay">
+                                <rect key="frame" x="287" y="634" width="79" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Ypx-F7-F6y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="_imageView" destination="02W-cD-fuA" id="sKI-7N-SEe"/>
+                        <outlet property="_scrollView" destination="kFO-oP-ocw" id="z2u-sg-xev"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nxx-ph-8hT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29.600000000000001" y="43.628185907046479"/>
         </scene>
         <!--CameraVC-->
         <scene sceneID="DaG-hh-Evd">
@@ -274,9 +347,6 @@
                                                 <state key="normal" title="Edit Image">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
-                                                <connections>
-                                                    <segue destination="q6i-88-bcI" kind="show" id="1DD-bM-Vo6"/>
-                                                </connections>
                                             </button>
                                             <connections>
                                                 <action selector="Edit:" destination="y2F-Sf-l6H" id="M3I-ob-sUZ"/>
@@ -286,10 +356,10 @@
                                 </items>
                             </navigationBar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2qr-8h-qeo" customClass="ImageV" customModule="ProImage" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRO-xc-f4K">
-                                <rect key="frame" x="0.0" y="64" width="375" height="595"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="551"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Capture Image">
                                     <color key="titleColor" red="0.4440927965" green="0.66666666669999997" blue="0.44039770769999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -358,9 +428,6 @@
                                                 <state key="normal" title="Edit Image">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
-                                                <connections>
-                                                    <segue destination="q6i-88-bcI" kind="show" identifier="e" id="2fQ-3M-T3h"/>
-                                                </connections>
                                             </button>
                                             <connections>
                                                 <action selector="Edit:" destination="QoE-MG-dxl" id="A6J-xg-n1c"/>
@@ -454,9 +521,6 @@
                                                 <rect key="frame" x="325" y="7" width="34" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Save"/>
-                                                <connections>
-                                                    <segue destination="5JQ-CL-GZf" kind="showDetail" id="1on-iM-Aq3"/>
-                                                </connections>
                                             </button>
                                             <connections>
                                                 <action selector="saveTo:" destination="q6i-88-bcI" id="9nR-Nt-uFM"/>
@@ -711,9 +775,6 @@
                                                 <rect key="frame" x="270" y="7" width="89" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Select Image"/>
-                                                <connections>
-                                                    <segue destination="q6i-88-bcI" kind="show" id="HzS-fU-VLy"/>
-                                                </connections>
                                             </button>
                                         </barButtonItem>
                                     </navigationItem>
@@ -737,10 +798,13 @@
     </scenes>
     <resources>
         <image name="Image" width="60" height="60"/>
+        <image name="default.jpg" width="1280" height="2000"/>
+        <image name="edit" width="30" height="30"/>
+        <image name="new" width="30" height="30"/>
+        <image name="save" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="HzS-fU-VLy"/>
-        <segue reference="Fas-kv-CzP"/>
+        <segue reference="Ypx-F7-F6y"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
 </document>
