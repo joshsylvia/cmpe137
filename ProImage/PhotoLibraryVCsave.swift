@@ -30,6 +30,7 @@ class PhotoLibraryVCsave: UIViewController {
      
     }
 
+    // checks for errors.
     func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
         if let error = error {
             // we got back an error!

@@ -12,7 +12,6 @@ import GTMOAuth2
 import UIKit
  
 class GoogleDriveVC: UIViewController {
-
     
     fileprivate let kKeychainItemName = "Drive API"
     fileprivate let kClientID = "71277932495-jq9ml9ap8k04spd7nuq4165b3h7ou08v.apps.googleusercontent.com"
@@ -42,11 +41,7 @@ class GoogleDriveVC: UIViewController {
             clientSecret: nil) {
             service.authorizer = auth
         }
-       
-        
-        
-        
-        
+
     }
     
     // When the view appears, ensure that the Drive API service is authorized
