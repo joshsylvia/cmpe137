@@ -72,10 +72,16 @@
         
         activityView.excludedActivityTypes = excludedActivityTypes;
         activityView.completionWithItemsHandler = ^(NSString *activityType, BOOL completed, NSArray *returnedItems, NSError *activityError) {
-            if(completed && [activityType isEqualToString:UIActivityTypeSaveToCameraRoll]){
-                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Saved successfully" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-                [alert show];
-            }
+           // if(completed && [activityType isEqualToString:UIActivityTypeSaveToCameraRoll]){
+             //   UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Saved successfully" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+              //  [alert show];
+           // }
+            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Title" message:@"Message" preferredStyle:UIAlertControllerStyleAlert];
+            
+            UIAlertAction* ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+            [alertController addAction:ok];
+            
+            [self presentViewController:alertController animated:YES completion:nil];
         };
         
         [self presentViewController:activityView animated:YES completion:nil];
