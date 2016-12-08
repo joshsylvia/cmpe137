@@ -227,24 +227,24 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="599"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nug-uw-IQA">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="599"/>
+                                        <rect key="frame" x="36" y="19" width="339" height="580"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="default.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="02W-cD-fuA" customClass="ImageV" customModule="ProImage" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="48" width="376" height="551"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="318" height="559"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="599" id="5j0-cm-8Ub"/>
-                                            <constraint firstAttribute="width" constant="375" id="f8G-PG-jxk"/>
+                                            <constraint firstAttribute="height" constant="580" id="5j0-cm-8Ub"/>
+                                            <constraint firstAttribute="width" constant="339" id="f8G-PG-jxk"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Nug-uw-IQA" firstAttribute="top" secondItem="kFO-oP-ocw" secondAttribute="top" id="5v1-9P-yJf"/>
+                                    <constraint firstItem="Nug-uw-IQA" firstAttribute="top" secondItem="kFO-oP-ocw" secondAttribute="top" constant="19" id="5v1-9P-yJf"/>
                                     <constraint firstAttribute="trailing" secondItem="Nug-uw-IQA" secondAttribute="trailing" id="JHr-V2-aS5"/>
-                                    <constraint firstItem="Nug-uw-IQA" firstAttribute="leading" secondItem="kFO-oP-ocw" secondAttribute="leading" id="Ylk-Wm-5V8"/>
+                                    <constraint firstItem="Nug-uw-IQA" firstAttribute="leading" secondItem="kFO-oP-ocw" secondAttribute="leading" constant="36" id="Ylk-Wm-5V8"/>
                                     <constraint firstAttribute="bottom" secondItem="Nug-uw-IQA" secondAttribute="bottom" id="uiF-On-ptZ"/>
                                 </constraints>
                                 <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
@@ -284,7 +284,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nxx-ph-8hT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1282.4000000000001" y="627.4362818590705"/>
+            <point key="canvasLocation" x="1416.8" y="617.54122938530736"/>
         </scene>
         <!--FacebookVC-->
         <scene sceneID="MmJ-Nh-hPD">

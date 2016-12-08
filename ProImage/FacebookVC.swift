@@ -22,7 +22,7 @@ class FacebookVC: UIViewController {
     var fbImage: UIImage!
 
     
-    
+    // Login button. 
     override func viewDidLoad() {
         super.viewDidLoad()
         
