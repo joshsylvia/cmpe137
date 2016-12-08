@@ -14,7 +14,6 @@
 		A522F8E41DBC0A5B00451229 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A522F8E31DBC0A5B00451229 /* LaunchScreen.storyboard */; };
 		A522F8E81DBC0F0A00451229 /* ImageV.swift in Sources */ = {isa = PBXBuildFile; fileRef = A522F8E71DBC0F0A00451229 /* ImageV.swift */; };
 		A522F8F01DBC52B900451229 /* FacebookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A522F8EF1DBC52B900451229 /* FacebookVC.swift */; };
-		A57A60421DA090B600CB27B8 /* ImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A60411DA090B600CB27B8 /* ImageVC.swift */; };
 		A57A60471DA0A76700CB27B8 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A60461DA0A76700CB27B8 /* CameraVC.swift */; };
 		A57A60491DA0A7B900CB27B8 /* PhtotoLibraryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A60481DA0A7B900CB27B8 /* PhtotoLibraryVC.swift */; };
 		A57A604B1DA0B78700CB27B8 /* PhotoLibraryVCsave.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A604A1DA0B78700CB27B8 /* PhotoLibraryVCsave.swift */; };
@@ -31,10 +30,9 @@
 		CE2F68621DD7D80900983556 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A522F8EB1DBC520400451229 /* FBSDKShareKit.framework */; };
 		CE2F68631DD7D80900983556 /* FBSDKShareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A522F8EB1DBC520400451229 /* FBSDKShareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CEDE2D7C1DF896460017F024 /* CLImageEditorDemo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEDE2D731DF896460017F024 /* CLImageEditorDemo-Info.plist */; };
-		CEDE2D7D1DF896460017F024 /* default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEDE2D751DF896460017F024 /* default.jpg */; };
 		CEDE2D7E1DF896460017F024 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDE2D761DF896460017F024 /* Images.xcassets */; };
-		CEDE2D801DF896460017F024 /* sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEDE2D781DF896460017F024 /* sample.jpg */; };
 		CEDE2D811DF896460017F024 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE2D7A1DF896460017F024 /* ViewController.m */; };
+		CEF45AD91DF8D86D004A632E /* default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEF45AD81DF8D86D004A632E /* default.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,7 +87,6 @@
 		A522F8EF1DBC52B900451229 /* FacebookVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookVC.swift; sourceTree = "<group>"; };
 		A522F9011DBC74DF00451229 /* ProImage-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ProImage-Bridging-Header.h"; sourceTree = "<group>"; };
 		A522F9041DBC78FA00451229 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		A57A60411DA090B600CB27B8 /* ImageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageVC.swift; sourceTree = "<group>"; };
 		A57A60461DA0A76700CB27B8 /* CameraVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		A57A60481DA0A7B900CB27B8 /* PhtotoLibraryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhtotoLibraryVC.swift; sourceTree = "<group>"; };
 		A57A604A1DA0B78700CB27B8 /* PhotoLibraryVCsave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoLibraryVCsave.swift; sourceTree = "<group>"; };
@@ -102,11 +99,10 @@
 		CE01E53B1DD7A37B00CE386E /* WebVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
 		CEDE2D731DF896460017F024 /* CLImageEditorDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "CLImageEditorDemo-Info.plist"; path = "CLImageEditorDemo/CLImageEditorDemo-Info.plist"; sourceTree = "<group>"; };
 		CEDE2D741DF896460017F024 /* CLImageEditorDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CLImageEditorDemo-Prefix.pch"; path = "CLImageEditorDemo/CLImageEditorDemo-Prefix.pch"; sourceTree = "<group>"; };
-		CEDE2D751DF896460017F024 /* default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = default.jpg; path = CLImageEditorDemo/default.jpg; sourceTree = "<group>"; };
 		CEDE2D761DF896460017F024 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = CLImageEditorDemo/Images.xcassets; sourceTree = "<group>"; };
-		CEDE2D781DF896460017F024 /* sample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sample.jpg; path = CLImageEditorDemo/sample.jpg; sourceTree = "<group>"; };
 		CEDE2D791DF896460017F024 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = CLImageEditorDemo/ViewController.h; sourceTree = "<group>"; };
 		CEDE2D7A1DF896460017F024 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = CLImageEditorDemo/ViewController.m; sourceTree = "<group>"; };
+		CEF45AD81DF8D86D004A632E /* default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = default.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,7 +170,6 @@
 			isa = PBXGroup;
 			children = (
 				A51265F21D9A3EEE00DCABA3 /* Main.storyboard */,
-				A57A60411DA090B600CB27B8 /* ImageVC.swift */,
 				A522F8E71DBC0F0A00451229 /* ImageV.swift */,
 				A534E5201DA9A33400408D86 /* ResourceFiles */,
 				A57427F51D9F38BE0087DA35 /* SupportedFiles */,
@@ -200,9 +195,8 @@
 			children = (
 				CEDE2D731DF896460017F024 /* CLImageEditorDemo-Info.plist */,
 				CEDE2D741DF896460017F024 /* CLImageEditorDemo-Prefix.pch */,
-				CEDE2D751DF896460017F024 /* default.jpg */,
+				CEF45AD81DF8D86D004A632E /* default.jpg */,
 				CEDE2D761DF896460017F024 /* Images.xcassets */,
-				CEDE2D781DF896460017F024 /* sample.jpg */,
 				CEDE2D791DF896460017F024 /* ViewController.h */,
 				CEDE2D7A1DF896460017F024 /* ViewController.m */,
 				A522F8E31DBC0A5B00451229 /* LaunchScreen.storyboard */,
@@ -360,10 +354,9 @@
 			files = (
 				A522F8E41DBC0A5B00451229 /* LaunchScreen.storyboard in Resources */,
 				CEDE2D7E1DF896460017F024 /* Images.xcassets in Resources */,
-				CEDE2D801DF896460017F024 /* sample.jpg in Resources */,
 				CEDE2D7C1DF896460017F024 /* CLImageEditorDemo-Info.plist in Resources */,
 				A51265F41D9A3EEE00DCABA3 /* Main.storyboard in Resources */,
-				CEDE2D7D1DF896460017F024 /* default.jpg in Resources */,
+				CEF45AD91DF8D86D004A632E /* default.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,7 +436,6 @@
 				A5208E961DBD7CA00004706A /* GoogleDriveVC.swift in Sources */,
 				CEDE2D811DF896460017F024 /* ViewController.m in Sources */,
 				A522F8F01DBC52B900451229 /* FacebookVC.swift in Sources */,
-				A57A60421DA090B600CB27B8 /* ImageVC.swift in Sources */,
 				A57A60471DA0A76700CB27B8 /* CameraVC.swift in Sources */,
 				A51265F71D9A3EEE00DCABA3 /* ProImage.xcdatamodeld in Sources */,
 				CE01E53C1DD7A37B00CE386E /* WebVC.swift in Sources */,

@@ -41,8 +41,8 @@ UINavigationControllerDelegate {
     // moves image to next view controller
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "e") {
-            let dvc = segue.destination as! ImageVC
-            dvc.newImage = imagePicked.image
+//            let dvc = segue.destination as! ImageVC
+  //          dvc.newImage = imagePicked.image
         }
     }
 }

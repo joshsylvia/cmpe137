@@ -17,8 +17,8 @@ class WebVC: UIViewController, UIWebViewDelegate {
     @IBOutlet weak var textField: UITextField!
  
     
+    @IBOutlet weak var imageTransfer: ImageV!
     
-    @IBOutlet weak var imagePicked: UIImageView!
  
     // Loads google images
     override func viewDidLoad() {
@@ -37,7 +37,10 @@ class WebVC: UIViewController, UIWebViewDelegate {
             let url:URL? = URL(string: textField.text!)
             let data:Data? = try? Data(contentsOf: url!)
             let image = UIImage(data : data!)!
-            imagePicked.image = image
+            let imageData = UIImageJPEGRepresentation(image, 0.6)
+            let compressedJPGImage = UIImage(data: imageData!)
+            UIImageWriteToSavedPhotosAlbum(compressedJPGImage!, nil, nil, nil)
+            
         }
     }
 
@@ -58,8 +61,9 @@ class WebVC: UIViewController, UIWebViewDelegate {
     // moves image to next view controller
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
  
-            let dvc = segue.destination as! ImageVC
-            dvc.newImage = imagePicked.image
+
+            //let dvc = segue.destination as! ViewController
+            //dvc.newImage = imagePicked.image
         
     }
     

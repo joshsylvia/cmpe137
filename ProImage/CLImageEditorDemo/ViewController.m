@@ -1,13 +1,9 @@
-//
-//  ViewController.m
-//  CLImageEditorDemo
-//
-//  Created by sho yakushiji on 2013/11/14.
-//  Copyright (c) 2013年 CALACULU. All rights reserved.
-//
+
 
 #import "ViewController.h"
 #import "CLImageEditor.h"
+#import "ProImage-Bridging-Header.h"
+
 
 @interface ViewController ()
 <CLImageEditorDelegate, CLImageEditorTransitionDelegate, CLImageEditorThemeDelegate>
@@ -15,10 +11,23 @@
 
 @implementation ViewController
 
+UIImage *newImage;
+/*
+ var newImage: UIImage!
+ 
+ override func viewDidLoad() {
+ super.viewDidLoad()
+ imageView.image = newImage
+ 
+*/
+
+//@synthesize newImage;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
+   // self.imageView.image = newImage;
+    
     //Set a black theme rather than a white one
 	/*
     [[CLImageEditorTheme theme] setBackgroundColor:[UIColor blackColor]];
@@ -30,6 +39,7 @@
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     */
     [self refreshImageView];
+    
 }
 
 - (void)didReceiveMemoryWarning
