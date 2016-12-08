@@ -11,7 +11,7 @@ import FBSDKShareKit
 
 class FacebookVC: UIViewController {
 
-
+    // creates login.
     let loginButton: FBSDKLoginButton = {
         let button = FBSDKLoginButton()
        // button.readPermissions = ["email"]
