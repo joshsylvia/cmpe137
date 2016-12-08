@@ -16,7 +16,7 @@ UINavigationControllerDelegate {
     
     @IBOutlet var imagePicked: UIImageView!
     
-    // Opens the Photo Library
+    // Opens the Photo Library 
     @IBAction func openPhotoLibraryButton(_ sender: UIButton) {
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.photoLibrary) {
             let imagePicker = UIImagePickerController()
