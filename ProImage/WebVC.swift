@@ -19,7 +19,7 @@ class WebVC: UIViewController, UIWebViewDelegate {
     @IBOutlet weak var imageTransfer: ImageV!
     
  
-    // Loads google i mages
+    // Loads google images
     override func viewDidLoad() {
         super.viewDidLoad()
         
