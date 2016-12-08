@@ -16,7 +16,6 @@ class WebVC: UIViewController, UIWebViewDelegate {
     
     @IBOutlet weak var textField: UITextField!
  
-    
     @IBOutlet weak var imageTransfer: ImageV!
     
  
