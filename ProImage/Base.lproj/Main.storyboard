@@ -240,6 +240,14 @@
                                             <constraint firstAttribute="width" constant="339" id="f8G-PG-jxk"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBq-hs-RW9">
+                                        <rect key="frame" x="8" y="582" width="367" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="BACK TO MAIN"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="q24-TM-dpE"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Nug-uw-IQA" firstAttribute="top" secondItem="kFO-oP-ocw" secondAttribute="top" constant="19" id="5v1-9P-yJf"/>
@@ -376,8 +384,8 @@
         <image name="save" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="uAX-mO-iOl"/>
         <segue reference="ljM-Ty-Pjt"/>
+        <segue reference="q24-TM-dpE"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
 </document>
