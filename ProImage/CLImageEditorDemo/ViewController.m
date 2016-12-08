@@ -17,33 +17,10 @@
 
 @implementation ViewController
 
-UIImage *newImage;
-/*
- var newImage: UIImage!
- 
- override func viewDidLoad() {
- super.viewDidLoad()
- imageView.image = newImage
- 
-*/
-
-//@synthesize newImage;
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-   // self.imageView.image = newImage;
-    
-    //Set a black theme rather than a white one
-	/*
-    [[CLImageEditorTheme theme] setBackgroundColor:[UIColor blackColor]];
-    [[CLImageEditorTheme theme] setToolbarColor:[[UIColor blackColor] colorWithAlphaComponent:0.8]];
-    [[CLImageEditorTheme theme] setToolbarTextColor:[UIColor whiteColor]];
-    [[CLImageEditorTheme theme] setToolIconColor:@"white"];
-    [[CLImageEditorTheme theme] setStatusBarStyle:UIStatusBarStyleLightContent];
-    [[UINavigationBar appearance] setBarStyle:UIBarStyleBlack];
-    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
-    */
+
     [self refreshImageView];
     
 }
@@ -78,24 +55,8 @@ UIImage *newImage;
 {
     if(_imageView.image){
         CLImageEditor *editor = [[CLImageEditor alloc] initWithImage:_imageView.image delegate:self];
-        //CLImageEditor *editor = [[CLImageEditor alloc] initWithDelegate:self];
-        
-        /*
-        NSLog(@"%@", editor.toolInfo);
-        NSLog(@"%@", editor.toolInfo.toolTreeDescription);
-        
-        CLImageToolInfo *tool = [editor.toolInfo subToolInfoWithToolName:@"CLToneCurveTool" recursive:NO];
-        tool.available = NO;
-        
-        tool = [editor.toolInfo subToolInfoWithToolName:@"CLRotateTool" recursive:YES];
-        tool.available = NO;
-        
-        tool = [editor.toolInfo subToolInfoWithToolName:@"CLHueEffect" recursive:YES];
-        tool.available = NO;
-        */
-        
+ 
         [self presentViewController:editor animated:YES completion:nil];
-        //[editor showInViewController:self withImageView:_imageView];
     }
     else{
         [self pushedNewBtn];
@@ -135,19 +96,7 @@ UIImage *newImage;
     
     [picker pushViewController:editor animated:YES];
 }
-/*
-- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
-{
-    if([navigationController isKindOfClass:[UIImagePickerController class]] && [viewController isKindOfClass:[CLImageEditor class]]){
-        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancelButtonDidPush:)];
-    }
-}
 
-- (void)cancelButtonDidPush:(id)sender
-{
-    [self.presentedViewController dismissViewControllerAnimated:YES completion:nil];
-}
-*/
 #pragma mark- CLImageEditor delegate
 
 - (void)imageEditor:(CLImageEditor *)editor didFinishEdittingWithImage:(UIImage *)image
