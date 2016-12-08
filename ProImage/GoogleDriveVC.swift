@@ -77,7 +77,7 @@ class GoogleDriveVC: UIViewController {
         )
     }
     
-    // Parse results and display
+    // Parse results and displa y
     func displayResultWithTicket(_ ticket : GTLServiceTicket,
                                  finishedWithObject response : GTLDriveFileList,
                                                     error : NSError?) {
