@@ -44,26 +44,10 @@ class WebVC: UIViewController, UIWebViewDelegate {
     }
 
 
- 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
  
     }
  
-    
-    
-    @IBAction func Edit(_ sender: UIBarButtonItem) {
-        self.performSegue(withIdentifier: "e", sender: self)
-    }
-    
-    
-    // moves image to next view controller
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
- 
-
-            //let dvc = segue.destination as! ViewController
-            //dvc.newImage = imagePicked.image
-        
-    }
     
 }
